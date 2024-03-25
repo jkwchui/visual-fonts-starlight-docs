@@ -1,6 +1,6 @@
 ---
-title: Example Reference
-description: A reference page in my new Starlight docs site.
+title: Compatibility
+description: Which features are available on what software, operating system, and devices.
 ---
 
 Reference pages are ideal for outlining how things work in terse and clear terms.

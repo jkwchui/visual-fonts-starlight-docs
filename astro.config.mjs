@@ -6,13 +6,21 @@ export default defineConfig({
 	site: 'https://docs.visual-fonts.com',
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Cantonese Fonts',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/jkwchui/visual-fonts-starlight-docs',
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Introduction',
+					autogenerate: { directory: 'intro' },
+				},
+				{
+					label: 'Tutorials',
+					autogenerate: { directory: 'tutorials' },
+				},
+				{
+					label: 'How-to Guides',
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Example Guide', link: '/guides/example/' },
@@ -21,6 +29,10 @@ export default defineConfig({
 				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Explanations',
+					autogenerate: { directory: 'explanations' },
 				},
 			],
 		}),
