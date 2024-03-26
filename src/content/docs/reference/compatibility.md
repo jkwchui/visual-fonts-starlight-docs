@@ -1,0 +1,26 @@
+---
+title: Font Compatibility
+description: Which features are available on what software, operating system, and devices.
+---
+
+Cantonese Fonts uses advanced OpenType features (including OpenType-SVG color format).  Not all font renderers fully or correctly implement the standards; whenever they do not, it results in diminished functionalities.  This page tabulates where the Cantonese Fonts can be used, and if some features are broken, which ones; claims are supported by screenshots.
+
+To help you easily navigate the reams of information, two sections are provided.  The first *At a Glance* section shows a condensed view by operating system.  This is supported by an exhaustive table in the *Detailed View* section, where you can filter and search for .
+
+To participate in this community effort, contact Jon.
+
+## At-a-glance
+
+### Mac
+
+<iframe class="airtable-embed" src="https://airtable.com/embed/appiXh9Ps19ZKJMPl/shr7Kyygn2xbv1byb?backgroundColor=cyanDusty&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="1500" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
+### Windows
+
+### Linux
+
+## Detailed view
+
+The table is quite large, and require lots of scrolling especially on smaller screens.  If you cannot easily view the entries, consider using this on a Desktop browser, and click the *View larger version* icon on the lower right corner to open in a new window.
+
+<iframe class="airtable-embed" src="https://airtable.com/embed/appiXh9Ps19ZKJMPl/shrEtBsqBbxe3mITe?backgroundColor=cyanDusty&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="2000" style="background: transparent; border: 1px solid #ccc;"></iframe>
