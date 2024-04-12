@@ -1,0 +1,53 @@
+---
+title: What is the Canto Font?
+description: What problems does the Cantonese Font solve?
+sidebar:
+  order: 1
+---
+
+import { Aside } from '@astrojs/starlight/components';
+import { Tweet, Vimeo, YouTube } from 'astro-embed';
+
+Cantonese is an expressive, fluid language with 85 million native speakers.  Written Cantonese, however, received no standardization and little investment.  The lack of written resources, and especially the lack of written material *with phonics*, makes teaching and learning Cantonese outside immersion very difficult.
+
+## The Big Idea
+
+Cantonese phonics was missing two core tools:
+1. an approachable romanization system that lets the learner *intuit* the tones, and
+2. a reliable method to translate Chinese script into the pronunciation.
+
+The Big Idea of the Canto Font is to resolve both problems in a *composable* way.  You can use the Cantonese Font to obtain material with > 99.7% accurate, approachable phonics *instantly*.  The suggested Jyutping can be overridden, and the font allows you to express *every* readable character in *every* readable way.
+
+The product essentially crytallizes everything that can be known about Cantonese pronunciation into a font.  Fonts can be used in a remarkable range of contexts, from preparing your own notes in word processors, to presentations and graphics, browsing the internet, or even in eReaders.
+
+The font does not need to be connected to the internet to work, and comes with the security, privacy, and longevity that only a sandboxed, offline-first software can provide.
+
+## The Little Ideas
+
+The Canto Font also implements many Little Ideas that teachers and learners want.  Examples include:
+
+### "Tag to translate"
+
+Wrapping an English word with `{`braces`}` "translates" the word into the equivalent Chinese and provide the Jyutping.  For example, `apple` wrapped by the tag `{apple}` becomes `蘋果`.  The vocabulary bank includes 3,000 concepts and 1,000 proper nouns, and accommodates capitalization, inflected nouns, and conjugated verbs.  This also works in the other direction from Chinese to English.
+
+### Idioms
+Cantonese shares use of "four-characters idioms" 四字成語 with standard Chinese.  Over 1,000 idioms can be accessed using the `{idiom: n}` syntax, where *n* is a number.
+
+### Sandwich Puns
+Cantonese has its own collection of "sandwich puns" 歇後語, where the first half suggests the second half in some unexpected, clever, and often funny ways.  The Canto Font contains over 400 puns.  The first half can be accessed with `{pun: n}`, and the corresponding second half with `{pun: n ?}`.
+
+### Grammar reference
+Certain grammatical features are unique to Chinese-Cantonese, such as *classifiers*, *verbal aspects*, and *final particles*.  It is surprisingly difficult to find structured information on them.  Canto Font uses `{keyword: n}`, `{keyword: n ?}`, and `{keyword: n ex}` to provide comprehensive lists, brief explanations, and examples.  See the How-to article for more details, or reference section for complete listing.
+
+### Markers / call-outs
+Teachers often need to call attention to a character or word.  Creators preparing material may want to mark a specific word for translation.  Numbered call-outs can be achieved using the `{marker: n}` syntax, or its shorthand `{n}` and `{-n}` for open and closing tags.
+
+### Standalone tones
+Canto Font implements unique tone marks, and you may want to use the tone in standalone contexts.  This can be accomplished with the `{tone: n}` syntax, and allow you to, for example, teach tones independent of any Chinese glyphs.
+
+### Easy Jyutping Toggle (Lab 🧪)
+You may want to be able to turn on and off the Jyutping.  Uses include for (self-) quizzing or preparing material for advanced readers who need the glyphs only over *selected* characters.  A special *No Jyutping* font variant can be turned on with the keyboard shortcut `cmd/ctrl-I` (like an Italic), giving a convenient and instant way of toggling Jyutping.
+
+### Progression of Jyutping (Lab 🧪)
+You (or your students) may wish to emphasize the usage of Jyutping over the characters, or omit the characters altogether.  If you are an advanced learner, or teaching advanced learners, you may want to work with standard LSHK Jyutping styling, omitting the tone marks introduced in the Canto Font.  A full progression of font variants are available.
+

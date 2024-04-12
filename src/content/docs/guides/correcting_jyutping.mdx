@@ -1,0 +1,32 @@
+---
+title: How to override Jyutping
+description: Methods for overriding a Jyutping suggestion.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+While the Canto Font uses the context to make very good guesses, there are occasions where you need to correct a Jyutping.  This page describes how you can do that.  For details of *why* this is necessary, and *what* is the best method, see the discussion in the Explanation section.
+
+## Method 1: Add Word Boundaries
+
+The first thing you should try when encountering unexpected Jyutping is to *add word boundaries*.  For example, the phrase 學生會好好 produces `會 wui2` because the Font matches / interprets this as 學生會 好好  ("student union is very good").  You, however, mean to say "students will be very good" 學生 會 好好.
+
+What you can do is to use the `|` (vertical bar, found over the Enter key on US keyboard layout) to manually tell the font what constitute a word.  (In the Canto Font, this `|` character is purely functional and not displayed.)
+
+With our previous example, adding the bar in the following manner will give you the `會 wui5` that conveys your meaning `學生|會|好好`.
+
+<Aside type="tip">In very rare cases, you may wish to break up a "word" without introducing a new word. In these cases you can use the `\` backslash as a non-word separator.</Aside>
+
+## Method 2: Direct override
+
+Some cases are not related to word boundaries.  For example, the final particle 喎 can be read as `wo3`, `wo4`, or `wo5`, and it is the *combination* of glyph and pronunciation that gives the meaning.  The meaning of the sentence 小明做晒功課喎 is undefined *until* the pronunciation of 喎 is fixed, and as much as Canto Font is magical, it doesn't read minds.  Word boundaries (method 1) also does not apply here.
+
+In these cases, you can use the `.jyutping` syntax.  Simply type a period `.`, followed by the Jyutping you want; the annotation changes the Jyutping of the previous character and is itself subsumed.
+
+<Aside type="caution">Support for direct override places special demands on the font renderer.  Whether it works is thus strongly dependent on the operating system and application.  There is full support for most apps in MacOS, but only in VectorStyler on Windows 11.</Aside>
+
+<Aside type="tip">
+If you type with a Chinese input method like TypeDuck, 倉頡, or 速成, your `.` key may instead give you a `。` and the alphanumeric might be full-width characters.  
+
+For your convenience, `。jyutping` *also* works and if a `。` is used, it will take either half-width or full-width characters.
+</Aside>

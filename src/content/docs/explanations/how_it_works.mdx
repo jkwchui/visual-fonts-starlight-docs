@@ -1,0 +1,65 @@
+---
+title: How the Font Works
+description: An explanation in my new Starlight docs site.
+sidebar:
+  order: 2
+---
+
+## The Big Idea
+
+How this makes Jyutping approachable
+
+### Problem 1: Unfriendly Romanization
+
+Cantonese is a *tonal* language where the *pitch* and the *inflection* both carry meaning.  For example, the phrases 你`噉`愛佢 and 你`咁`愛佢, sounds the same except for the tones but have completely different meaning.  (The former means, "that twisted way you love him," the latter, "the depth of your love for him".)  Conveying the tone is essential.
+
+Jyutping was devised by the Linguistic Society of Hong Kong (LSHK) to represent the sounds in modern Cantonese.  Jyutping started as an academic linguists' tool; the goal was to fully and unambiguously denote sounds.  Many researcher tools are user hostile, and by compressing pitch and inflection into a (seemingly arbitrary) number, Jyutping's treatment of tones is certainly not user-friendly.
+
+Learning a language is hard, and especially so for learners who are exposed to a tonal language for the first time.  Needing to mentally map some number to a tone before applying it to a *preceding* vowel creates an additional strain on the very limited short-term memory.
+
+On full sentences, Jyutping's mix of alphabet and numbers create an intimidating, alien-script aesthetic.  This is exacerbated when mixed with Chinese script, where the block/fixed-width expectation of ideographs clashes with the variable length alphanumeric.
+
+Raw Jyutping is ugly and unreadable on many levels.
+
+### Problem 2: Shaky Jyutping Generation
+
+Written Cantonese uses Chinese ideographs, but there is no 1:1 correspondence between what is written and how it sounds.  For example, the character 行 can be read in five common ways, and it must be read in one specific way within a given context.
+
+With a long history, with influences from many languages, and complexity around Simplified and Traditional script, there are no rules that describe why/how a character should be read.  The right reading — what is "right"? — is simply the collective agreement on the tens-of-thousands of characters and hundreds-of-thousands of contexts. 
+
+Even getting the context is not easy: without spaces denoting word boundary, Chinese sentences needed to be *segmented* into words.  Backed by the collective might of Taiwan and the PRC, there are tools for doing this with standard written Chinese with good success, but doing so for ***Cantonese*** is non-trivial.
+
+Automated Jyutping generation is thus often faulty.  They are poor enough that none of the tools were even able to provide accuracy benchmarks, because that would require long "model answers" from different genre of text for comparison.  The tooling was wrong often enough and it's too tedious to prepare long model answers.
+
+### Solution 1: Better Jyutping Design
+
+The Cantonese Font updates how Jyutping looks, on the character and prose levels.  First conceived in 2017, every tiny aspect and details were tuned over hundreds of iterations.  The Jyutping from this is easy and appealing to read in both standalone and long prose forms.
+
+#### Character level
+
+There are several small modifications to Jyutping on a character level:
+1. adding of tone marks to visualize pitch and inflection
+2. placing tone numbers to match pitch
+3. coloring the components, especially to de-accentuate the non-plosive coda
+
+#### Prose level
+
+Characters adopt a *pragmatic fixed-width* setting.  This has two elements:
+1. characters are primarily uniform-width,
+2. but grows to fit wider Jyutping as needed.
+
+The overall effect is that there is a fixed-width, fulfiling CJK conventions and easy reading rhythm, while accommodating over-run Jyutping only to the necessary extent.
+
+### Solution 2: Accurate Jyutping
+
+## The Little Ideas
+
+### Low-barrier "Translation"
+
+### Culture and Grammar bank
+
+### Teaching aids
+
+### Easy Toggle
+
+### Styles for Learner Progressions / Intents

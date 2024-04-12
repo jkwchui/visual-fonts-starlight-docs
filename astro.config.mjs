@@ -1,11 +1,13 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import starlightImageZoom from 'starlight-image-zoom'
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://docs.visual-fonts.com',
 	integrations: [
 		starlight({
+			plugins: [starlightImageZoom()],
 			title: 'Cantonese Fonts',
 			social: {
 				github: 'https://github.com/jkwchui/visual-fonts-starlight-docs',
@@ -16,15 +18,12 @@ export default defineConfig({
 					autogenerate: { directory: 'intro' },
 				},
 				{
-					label: 'Tutorials',
-					autogenerate: { directory: 'tutorials' },
+					label: 'Getting Started',
+					autogenerate: { directory: 'getting_started' },
 				},
 				{
 					label: 'How-to Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
-					],
+					autogenerate: { directory: 'guides' },
 				},
 				{
 					label: 'Reference',
