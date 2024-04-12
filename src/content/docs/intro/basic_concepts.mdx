@@ -2,10 +2,65 @@
 title: Basic Concepts
 description: Concepts and terminologies.
 sidebar:
-  order: 2
+  order: 3
 ---
 
 import { Aside } from '@astrojs/starlight/components';
 import { Tweet, Vimeo, YouTube } from 'astro-embed';
 
-Throughout the documentation the 
+This section outlines the elements involved in the Cantonese Font.  While the terms recur in these documentation, I suggest just skimming over them for now.  You can always re-visit them when you need, and you can search using the `cmd/ctrl-K` keyboard shortcut while reading other pages.
+
+## Font
+
+A **font**, in the most basic form, contains **instructions** (**paths**) about how each character should be drawn.  These instructions describes the shape and knows not about color; I'll refer to these (standard) fonts as **monochrome** fonts.  While they are by far the most common kind of font you'll encounter, most of the Cantonese Fonts are **color fonts** (which *also* contains monochrome instructions as a **fall-back** fail-safe).
+
+Normal fonts contain about 2,000 **glyphs** (drawings), and contains Latin, Cyrillic, and Greek characters as well as numbers and punctuations.  A **Chinese-Japanese-Korean** (**CJK**) font contains many more glyphs to represent the characters; the Cantonese Font, with 65,355 glyphs, maxes out what could be packaged in a font.
+
+CJK characters are referred to by a "standard ID number," assigned by the Unicode Consortium.  This ID number is called a **codepoint**.
+
+Modern, sophisticated fonts contain not only shapes, but addition information about how glyphs may interact with one another.  These **rules**, or **features**, describes the interactions.  An example is a **ligature**, where particular pairs of letters gets swapped with a different glyph.  Many other kinds of rules exists, and the Cantonese Font uses about 150,000 features to specify the intricate behaviours.
+
+Fonts are interpreted by software, often on the operating system level.  The mechanism is complex and takes place over multiple stages, including **layout**, **shaping**, and **rendering**.  I often refer to this generically as "the **font renderer**".
+
+The Cantonese Fonts are not *true* fonts; instead of relying on paths, each glyph actually contains a (mathematical) **vector image** in the **SVG** format.  This kind of "false font" is called an **Opentype SVG** (**OT-SVG**) font.
+
+The Cantonese Fonts is planned as full families so that the Bold, No Jyutping, Only Jyutping **font variants** shares the same features, and can be used in a mix-and-match fashion.
+
+All the fonts are / will be available under the **SIL Open Font 1.1 License**, which means that they can be used for commercial projects.  The only restriction is you cannot resell the fonts.  Special font variants will be embargoed for a few years but can be accessed now under the Lab 🧪 sponsorship program.
+
+## Cantonese and Jyutping
+
+**Romanization** is using alphanumeric characters to denote the sound.  **Jyutping** is currently the most popular Cantonese romanization system, though you will also see a similar system called **Yale** (which does use some tone marks).
+
+Jyutping conceptualizes Cantonese sounds into four components, and in the extended Jyutping (**Jyutping+**) used by the Canto Font, these four components are represented with different colors:
+1. **Onset** (brown)
+2. **Nucleus** (blue)
+3. **Coda** (blue *or* gray)
+4. **Tone** (red)
+
+Cantonese contains six tones, which vary by how high they sound (**pitch**) and whether the utterance stays at the same pitch (**inflection**).  The sequence of numbering has a historical basis.
+
+CJK ideographs have three components:
+1. How they are drawn,
+2. How they sound (**pronunciation**), and
+3. What it means (**semantic**)
+
+The Cantonese Font is deeply engaged in relating the shape with the pronunciation.
+
+Most characters corresponds to a unique sound but some characters can be pronounced in many ways (e.g., 行 can be `haang4`, `hang4`, `hang6`, `hong2`, `hong4` amongst others).  How a character is pronounced is **context-sensitive**, that is, it depends on the meaning.  For example, in "銀行 bank", the 行 must be `hong4` and not the alternatives.  Sometimes this dependence is relaxed: 妹妹 can be pronounced with a variety of tones but carrying the same meaning.
+
+In certain cases, the sound also compels the meaning.
+
+Some characters are written in multiple ways, for a number of historical reasons; some have their own codepoints while others do not.  Sometimes one written shape corresponds to multiple characters (e.g., 体 is used as simplified for 體 but it was a Traditional character in its own right).
+
+Some sounds have a meaning, but no standardized / accepted glyphs to represent it.  An example is `he3`, which means roughly "carefree".
+
+Most characters are pronounced with one Jyutping but a handful of characters are read with two.  These are called **bi-syllabic** characters.  An example is 卅 (`saa1 aa6`).
+
+In the Cantonese Font, each character codepoint is represented by one *or more* **glyphs**: each unique combination of Chinese character and Jyutping is its own glyph.  `行 haang4` is a different glyph than `行 hong2`.  The **default reading** is the glyph/Jyutping that will be shown when a character is typed without any neighbors.
+
+## Chinese language
+
+Chinese ideographs (**script**) can be used to express a number of languages.  **Standard written Chinese 書面語** is a form of grammatical / vocabulary formulation that aligns closely with Mandarin usage.  This can be uttered in Cantonese but represents a formal, stilted register.  **Written Cantonese** directly corresponds to how Cantonese is spoken.  The presence of *two* parallel forms of writing is called **di-glossic**.
+
+Chinese script, unlike Latin/Cyrillic, is written without spaces to denote different words.  The reader is expected to "cut up" the sentence into fragments, and this is not a certain process.  **Segmentation** refers to this action of cutting up sentence into words.

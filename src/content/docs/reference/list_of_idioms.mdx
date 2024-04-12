@@ -8,4 +8,114 @@ sidebar:
 import { Aside, FileTree } from '@astrojs/starlight/components';
 import { Tweet, Vimeo, YouTube } from 'astro-embed';
 
-The 
+| **id**  | **measure** | **example** | **category** | **meaning**                                |
+|---------|-------------|-------------|--------------|--------------------------------------------|
+| **1**   | 個           | 一個醫生        | sortal       | people; abstract things                    |
+| **2**   | 隻           | 兩隻狗，八隻爪     | sortal       | animals; round obj; one of a pair          |
+| **3**   | 隻           | 嗰隻牌子        | generic      | "model, variety"                           |
+| **4**   | 件           | 佢件衫         | sortal       | commodity; most clothes; abstract          |
+| **5**   | 張           | 一張檯         | sortal       | flat surface                               |
+| **6**   | 支           | 有支筆         | sortal       | cylindrical                                |
+| **7**   | 粒           | 一粒糖         | sortal       | small and round                            |
+| **8**   | 條           | 嗰條路         | sortal       | long and narrow                            |
+| **9**   | 啲           | 啲橙好甜        | collective   | those (generic) or uncountable             |
+| **10**  | 對           | 嗰對鞋         | collective   | pair                                       |
+| **11**  | 種           | 多種語言        | generic      | kind                                       |
+| **12**  | 班           | 呢班學生        | collective   | groups of people; scheduled transportation |
+| **13**  | 樣           | 嗰樣嘢         | generic      | kind                                       |
+| **14**  | 下           | 打兩下手板       | verbal       | times (re: verb)                           |
+| **15**  | 次           | 四次機會        | sortal       | abstract enumerations                      |
+| **16**  | 嚿           | 一嚿石         | collective   | solid mass of no particular shape          |
+| **17**  | 款           | 呢款手機        | generic      | "pattern, design"                          |
+| **18**  | 類           | 呢類問題        | generic      | "genre, species"                           |
+| **19**  | 把           | 把刀          | sortal       | "tools, instruments"                       |
+| **20**  | 架           | 架車          | sortal       | vehicles                                   |
+| **21**  | 間           | 間屋          | sortal       | buildings                                  |
+| **22**  | 塊           | 一塊鏡         | sortal       | vertical surface                           |
+| **23**  | 幅           | 一幅畫         | sortal       | square/rectangular                         |
+| **24**  | 磅           | 兩磅牛肉        | quantities   | pound                                      |
+| **25**  | 斤           | 一斤菜         | quantities   | catty                                      |
+| **26**  | 両           | 三両瑤柱        | quantities   | tael                                       |
+| **27**  | 打           | 半打雞蛋        | quantities   | dozen                                      |
+| **28**  | 呎           | 一呎喉管        | quantities   | feet                                       |
+| **29**  | 吋           | 七吋竹簽        | quantities   | inch                                       |
+| **30**  | 米           | 三米布         | quantities   | meter                                      |
+| **31**  | 錢           | 五錢人參        | quantities   | mace                                       |
+| **32**  | 成           | 八成勝算        | quantities   | degrees (ten-percents)                     |
+| **33**  | 行           | 一行字         | sortal       | a row of                                   |
+| **34**  | 杯           | 三杯茶         | container    | a cup of                                   |
+| **35**  | 盒           | 兩盒糖         | container    | a box of                                   |
+| **36**  | 包           | 一包米         | container    | a sack of                                  |
+| **37**  | 碟           | 一碟菜         | container    | a dish of                                  |
+| **38**  | 個           | 一個碗         | container    | a container of                             |
+| **39**  | 袋           | 一袋柑         | container    | a bag of                                   |
+| **40**  | 罐           | 一罐汽水        | container    | a can of                                   |
+| **41**  | 樽           | 飲樽可樂        | container    | a bottle of                                |
+| **42**  | 堆           | 嗰堆垃圾        | collective   | a pile of                                  |
+| **43**  | 滴           | 一滴血         | collective   | drops                                      |
+| **44**  | 橛           | 一橛人         | collective   | a portion of                               |
+| **45**  | 乍           | 一乍雀仔        | collective   | irregular group                            |
+| **46**  | 劈           | 一劈嘢         | collective   | shapeless mass                             |
+| **47**  | 灘           | 一灘水         | collective   | a patch of liquids                         |
+| **48**  | 套           | 一套新衫        | collective   | a set of; also for film                    |
+| **49**  | 串           | 一串燒烤        | collective   | one skewer of                              |
+| **50**  | 埲           | 一埲牆         | sortal       | wall                                       |
+| **51**  | 部           | 一部電腦        | sortal       | machine                                    |
+| **52**  | 座           | 一座山         | sortal       | huge items                                 |
+| **53**  | 份           | 買份保單        | sortal       | a copy of                                  |
+| **54**  | 片           | 一片麪包        | sortal       | thin slices                                |
+| **55**  | 本           | 我本書         | sortal       | book/magazines                             |
+| **56**  | 層           | 買層樓         | sortal       | a flat/unit                                |
+| **57**  | 單           | 嗰單生意        | sortal       | a bill/case of                             |
+| **58**  | 度           | 拉埋度閘        | sortal       | door/gate; place                           |
+| **59**  | 幢           | 三幢舊樓        | sortal       | vertical block                             |
+| **60**  | 封           | 兩封電郵        | sortal       | sealed messages                            |
+| **61**  | 句           | 一句問候        | sortal       | a phrase of                                |
+| **62**  | 卷           | 買卷廁紙        | sortal       | a roll of                                  |
+| **63**  | 朕           | 一大朕味        | sortal       | smell                                      |
+| **64**  | 陣           | 幾陣驟雨        | sortal       | a burst/gust of                            |
+| **65**  | 碌           | 𢲡碌棍        | sortal       | plank / stick                              |
+| **66**  | 棚           | 佢棚牙         | sortal       | a row of                                   |
+| **67**  | 排           | 四排朱古力       | sortal       | a bar of                                   |
+| **68**  | 棵           | 嗰棵樹         | sortal       | trunk / stem                               |
+| **69**  | 篇           | 一篇文章        | sortal       | texts                                      |
+| **70**  | 首           | 寫首歌         | sortal       | song / poem                                |
+| **71**  | 圍           | 幾圍枱         | sortal       | "round, flat (tables)"                     |
+| **72**  | 啖           | 飲啖水         | sortal       | a mouthful of                              |
+| **73**  | 齣           | 睇齣戲         | sortal       | movies                                     |
+| **74**  | 停           | 嗰停人         | generic      | kind (negative)                            |
+| **75**  | 渣           | 一渣啤酒        | container    | a jar of                                   |
+| **76**  | 籠           | 一籠燒賣        | container    | a basket of                                |
+| **77**  | 盤           | 一盤散沙        | container    | a basin of                                 |
+| **78**  | 桶           | 半桶水         | container    | bucket of                                  |
+| **79**  | 碗           | 兩碗飯         | container    | bowls of                                   |
+| **80**  | 筆           | 嗰筆錢         | collective   | sum of money                               |
+| **81**  | 餐           | 一餐飯         | collective   | items of meal                              |
+| **82**  | 抽           | 一抽鎖匙        | collective   | linked objects                             |
+| **83**  | 笪           | 一笪地         | collective   | a patch of                                 |
+| **84**  | 沓           | 一沓報紙        | collective   | a stack of (flat objects)                  |
+| **85**  | 疊           | 一疊銀紙        | collective   | a stack of                                 |
+| **86**  | 番           | 一番説話        | collective   | abstract thought (in formal registers)     |
+| **87**  | 圈           | 幾圈麻雀        | collective   | circle/round (applied to games)            |
+| **88**  | 朵           | 一朵花         | sortal       | flowers and clouds                         |
+| **89**  | 紥           | 一紥花         | collective   | a bunch / bundle                           |
+| **90**  | 簇           | 一簇花         | sortal       | a bunch                                    |
+| **91**  | 舖           | 捉舖棋         | collective   | circle / round (games)                     |
+| **92**  | 盤           | 捉盤棋         | collective   | circle / round (games)                     |
+| **93**  | 局           | 一局棋         | sortal       | game / matches                             |
+| **94**  | 楷           | 一楷橙         | sortal       | segments / section (of fruit/veg)          |
+| **95**  | 擔           | 一擔柴         | collective   | a heavy bundle                             |
+| **96**  | 道           | 一道光         | sortal       | long (light)                               |
+| **97**  | 點           | 一點意見        | quantity     | a little bit of                            |
+| **98**  | 頂           | 我頂帽         | sortal       | headwear                                   |
+| **99**  | 錠           | 三錠金子        | sortal       | ingots                                     |
+| **100** | 段           | 一段時間        | sortal       | segments / section (of something long)     |
+| **101** | 屆           | 今屆畢業生       | sortal       | recurring events/objects                   |
+| **102** | 隊           | 一隊人馬        | collective   | a squad / team                             |
+| **103** | 噸           | 五噸貨物        | quantity     | metric ton                                 |
+| **104** | 發           | 兩發子彈        | sortal       | rounds (of ammunition)                     |
+| **105** | 副           | 一副啤牌        | sortal       | sets of; facial expressions                |
+| **106** | 壺           | 一壺茶         | container    | a pot of (liquid)                          |
+| **107** | 瓶           | 一瓶香水        | container    | a bottle of (written)                      |
+| **108** | 截           | 兩截蓮藕        | sortal       | segments (of something long)               |
+| **109** | 盞           | 一盞燈         | sortal       | lamp                                       |
