@@ -5,19 +5,87 @@ sidebar:
   order: 3
 ---
 
-import { Aside, FileTree } from '@astrojs/starlight/components';
+import { Aside, FileTree, Steps } from '@astrojs/starlight/components';
 import { Tweet, Vimeo, YouTube } from 'astro-embed';
 
-Welcome to 
+Accurate Jyutping annotations used to be hard to come by, and Cantonese Font gives you exactly that. What if your browser can use it to display web pages?  That would open up *infinite* possibilities.
 
-<Aside type="tip">
-This tutorial references `quick_start.keynote`.  You can find this in your download under the `/starters` folder.
+Let's show you how to make that happen.
+
+## Prerequisites
+
+Chromium-based browsers on Mac displays Cantonese Fonts correctly.  Any **Chrome** versions from 2019 onwards should work.
+
+Chrome on Windows 11 renders Cantonese Fonts but only in monochrome.
+
+## 1. Installing Chrome StyleBot
+
+While you could do a global override in *Preference*, that is a crude measure which affects many auxiliary content (such as headers, footers, or sidebars) that you do not want changed.  What you probably want is to *surgically* use Canto Font to show particular content for specific sites.  To do this, you will need to install a [Chrome extension called StyleBot](https://stylebot.dev/).
+
+<Steps>
+
+1. Go to [StyleBot project page](https://stylebot.dev/)
+2. Click on `Stylebot for Chrome` to go to Chrome app store
+3. Click `Add to Chrome`
+4. Pin the extension to the toolbar, by clicking on the puzzle-piece, then push-pin besides Stylebot.
+
+</Steps>
+
+<Aside type="note" title="What does StyleBot do?">
+Webpages use *Cascading Style Sheets* (CSS) to declare how content should be displayed.  StyleBot let you easily write your own rules, and apply them with higher precedence.
 </Aside>
 
-## Installation
+## 2. Importing styles
 
-<Vimeo id="https://vimeo.com/918235952" />
+StyleBot let you change how different parts of any website look, by writing custom CSS rules.  Don't fret if you don't know how to write CSS!  To help you get started, I have prepared styles for several popular sites:
+
+1. [Cantonese (Yue) Wikipedia](zh-yue.wikipedia.org)
+2. [Chinese Wikipedia](zh.wikipedia.org)
+3. [Chinese WikiSource](zh.wikisource.org), a compendium of original text (most classical prose can be found here)
+4. [Hong Kong Internet Wiki](evchk.fandom.com), popular culture
+5. [Ming Pao](news.mingpao.com), newspaper in Hong Kong
+6. [And Then](www.andthen.hk), a cultural magazine/blog in Hong Kong
+7. vimeo.com (captions only)
+8. youtube.com (captions only)
+9. open.spotify.com (lyrics only)
+10. kkbox.com (lyrics only)
+
+This is found in your download package as `VF-canto-2.7.json`:
+
+<FileTree>
+- fonts/
+- starters/
+- stylebot
+  - **VF-canto-2.7.json**
+</FileTree>
+
+To import the styles, 
+
+<Steps>
+1. click on the StyleBot button in the toolbar to open up Stylebot menu
+2. select `Options`.  This will open a new window.
+3. click on `Sync`
+4. click `Import`, and select the `VF-canto-2.7.json` file from your download
+</Steps>
+
+We'll look at simple customizations, and how to turn off a style for a page, in the next section.
+
+## 3. Simple customizations
+
+### 3.1 Changing font sizes
+
+To change the font size for a site,
+
+<Steps>
+1. click on the StyleBot button in the toolbar to open up Stylebot menu
+2. select `Open Stylebot`.  This will open a new sidebar with the current rules.
+3. adjust the number following `font-size`.  You should see the changes reflected immediately in the browser window.
+</Steps>
+
+### 3.2 De-activating style for a site
+
+To deactivate style for a site, click on the StyleBot button in the toolbar, then toggle off the blue button.  You should see the changes reflected immediately.
 
 ## Further reading
 
-- Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework
+* to learn how to create your own styles for a new site, see [How to Create New Styles for StyleBot](../guides/create_new_stylebot_style.mdx)
