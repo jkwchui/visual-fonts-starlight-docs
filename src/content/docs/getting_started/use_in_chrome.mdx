@@ -12,6 +12,8 @@ Accurate Jyutping annotations used to be hard to come by, and Cantonese Font giv
 
 Let's show you how to make that happen.
 
+<Vimeo id="https://vimeo.com/938499916?share=copy" />
+
 ## Prerequisites
 
 Chromium-based browsers on Mac displays Cantonese Fonts correctly.  Any **Chrome** versions from 2019 onwards should work.
@@ -39,18 +41,20 @@ Webpages use *Cascading Style Sheets* (CSS) to declare how content should be dis
 
 StyleBot let you change how different parts of any website look, by writing custom CSS rules.  Don't fret if you don't know how to write CSS!  To help you get started, I have prepared styles for several popular sites:
 
-1. [Cantonese (Yue) Wikipedia](zh-yue.wikipedia.org)
-2. [Chinese Wikipedia](zh.wikipedia.org)
-3. [Chinese WikiSource](zh.wikisource.org), a compendium of original text (most classical prose can be found here)
-4. [Hong Kong Internet Wiki](evchk.fandom.com), popular culture
-5. [Ming Pao](news.mingpao.com), newspaper in Hong Kong
-6. [And Then](www.andthen.hk), a cultural magazine/blog in Hong Kong
-7. vimeo.com (captions only)
-8. youtube.com (captions only)
-9. open.spotify.com (lyrics only)
-10. kkbox.com (lyrics only)
+1. [Cantonese (Yue) Wikipedia 粵語維基](https://zh-yue.wikipedia.org/wiki/%E9%A0%AD%E7%89%88)
+2. [Chinese Wikipedia 中文維基](https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5)
+3. [Chinese WikiSource 維基文庫](https://zh.wikisource.org/zh-hant/Wikisource:%E9%A6%96%E9%A1%B5), a compendium of original text (most classical prose can be found here)
+4. [Hong Kong Internet Wiki 香港網絡大典](https://evchk.fandom.com/zh/wiki/%E9%A6%96%E9%A0%81), popular culture
+5. [Ming Pao 明報](https://news.mingpao.com/%E6%98%8E%E5%A0%B1%E6%96%B0%E8%81%9E%E7%B6%B2/main), newspaper in Hong Kong
+6. [The Collective 集誌社](https://thecollectivehk.com), news and investigations in Hong Kong
+7. [Independent Media 獨立媒體](https://www.inmediahk.net/), independent news in Hong Kong
+8. [And Then](https://www.andthen.hk/), a cultural magazine/blog in Hong Kong
+9. [Vimeo](https://vimeo.com/) (captions only)
+10. [YouTube](https://www.youtube.com/) (captions only)
+11. [Spotify Webapp](https://open.spotify.com/) (lyrics only)
+12. [KKBox cantopop lyrics](https://www.kkbox.com/) (lyrics only)
 
-This is found in your download package as `VF-canto-2.7.json`:
+This is found in your download package as `VF-Canto 2.7 chrome mac_win.json` (or similarly named `.json` file):
 
 <FileTree>
 - fonts/
@@ -72,6 +76,12 @@ We'll look at simple customizations, and how to turn off a style for a page, in 
 
 ## 3. Simple customizations
 
+Note that you have a tremendous amount of control: all these customizations can be applied to each site separately.  You can choose, for example, to use Large Jyutping for WikiSource but Regular for Wikipedia.
+
+<Vimeo id="https://vimeo.com/938504466?share=copy" />
+
+Advanced behaviour can be programmed using custom CSS rules, for example, to show Jyutping for a paragraph on mouse-hover.  See the article Advanced Stylebot Usage under the How-to Guides.
+
 ### 3.1 Changing font sizes
 
 To change the font size for a site,
@@ -85,6 +95,14 @@ To change the font size for a site,
 ### 3.2 De-activating style for a site
 
 To deactivate style for a site, click on the StyleBot button in the toolbar, then toggle off the blue button.  You should see the changes reflected immediately.
+
+### 3.3 Changing to a different font variant 🧪
+
+If you have installed font variants from the Lab 🧪 programme, you can use the following names to replace `VF-Canto` to access the variants:
+
+* `VF-Canto-Large`: Jyutping are twice as large
+* `VF-Canto-Bold`: Chinese characters are bolded
+* `VF-Canto-OnlyJyutping`: Only Jyutping shown but no Chinese.  The Jyutping here occupy the full height, and you would likely want to half the font-size.  For example, if the font-size was originally `4 em`, you would want to decrease this to `2 em`.
 
 ## Further reading
 
