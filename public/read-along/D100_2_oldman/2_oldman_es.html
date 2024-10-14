@@ -1,0 +1,1898 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="./rabbit-lyrics.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="./bulma-no-dark-mode.min.css">
+<link rel="stylesheet" href="./bulma-custom.css">
+<style>
+
+.rabbit-lyrics{
+    position:relative;
+    padding:1em 0;
+    height:12em;
+    overflow-x:hidden;
+    overflow-y:auto;
+    scroll-behavior:smooth;
+    background-color:#fff;
+    border:1px solid #ddd;
+}
+
+.rabbit-lyrics--center{text-align:center;}
+.rabbit-lyrics--left{text-align:left;}
+.rabbit-lyrics--right{text-align:right;}
+
+.rabbit-lyrics__line{
+    line-height:1.5em;
+    min-height:1.5em;
+    padding:0 1em;
+}
+
+.rabbit-lyrics__line--active{background-color:rgba(0,0,0,.05)}
+.rabbit-lyrics__inline--active{color:#00707F;}
+.rabbit-lyrics--mini{height:3em;overflow-y:hidden;}
+.rabbit-lyrics--mini .rabbit-lyrics__line{display:none;}
+.rabbit-lyrics--mini .rabbit-lyrics__line--active{
+    display:block;
+    background:transparent;
+}
+.rabbit-lyrics--full{
+    height:auto;
+    overflow-y:initial;
+}
+
+.lyrics_zh {
+    font-family: "VF-Canto-HKEdB-Large", "VF-Canto-Large", "VF Cantonese Large Jyutping", "VF Cantonese HKEdB Large", "VF-Canto-HKEdB", "VF Cantonese HKEdB", "VF-Canto", "VF Cantonese", "VF-Canto-Heritage", "VF Cantonese Heritage"; 
+    font-size: 5em;
+    line-height: 1em;
+}
+
+.lyrics_icon {
+    font-family: "VF-Canto-HKEdB-Large", "VF Cantonese HKEdB Large","VF-Canto", "VF Cantonese", "VF-Canto-HKEdB", "VF Cantonese HKEdB","VF-Canto-Heritage", "VF Cantonese Heritage"; 
+    font-size: 5em;
+    line-height: 1em;
+}
+
+.lyrics_latin {
+    font-family: "Dolly Pro", "Fira Sans Light",  sans-serif;
+    font-size: 0.5em !important;
+    line-height: 1.2em;
+}
+
+.lyrics_ja {
+    font-family: sans-serif;
+    font-size: 3em;
+    line-height: 150%;
+}
+
+.lyrics_zh-no-jyutping {
+    font-family: "VF Cantonese HKEdB NoJyutping", "VF-Canto-HKEdB-NoJyutping", "VF Cantonese NoJyutping", "VF-Canto-NoJyutping";
+    font-size: 5em;
+}
+
+.all_lyrics {
+    column-count: 2;
+    column-gap: 1%;
+    display: grid;
+    grid-template-columns: 15% 84%;
+}
+
+.player_row {
+    column-count: 2;
+    column-gap: 2%;
+    display: grid;
+    grid-template-columns: 85% 12%;
+    margin: 2em;
+}
+
+.speaker {
+    overflow: hidden;
+}
+
+</style>
+<body>
+    <div class="content">
+        <section class="section">
+        <h1 class="title">《往事如煙・一個老人》</h1>
+    
+        <p>This radio drama was produced by Mr Wong Tak Chuen, and completed in partnership with the Hong Kong online education platform Hok6.com and D100 radio station. Visual Fonts contributed the multilingual subtitles with Jyutping; these were carefully transcribed to be 100% faithful to what was spoken by the voice actors.</p>
+
+        <p>The YouTube video can be viewed without the Cantonese Font. The interactive version shows Jyutping <strong>provided that the Cantonese Font 2.8 is installed</strong>, and can be played back at slow speed for easy comprehension by clicking on the three dots next to volume control.</p>
+
+        <p>本廣播劇由王德全先生監製，並與學識教育平台及D100電台聯合製作。是像字體負責製作粵語口語、粵拼字幕，以及外語翻譯。</p>
+
+        <p>YouTube 版本為純影片，毋須安裝粵語字體都可以聆聽、閲讀。互動版本需要已經安裝粵語字體 2.8 先至可以睇到粵拼。</p>
+
+        </section>
+        <div class="grid player_row">
+            <audio id="audio" controls style="width: 100%;">
+                <source src="2_oldman.ogg" type="audio/ogg">
+                <source src="2_oldman.mp3" type="audio/mpeg">
+            </audio>
+            <button id="toggleJyutping" class="button is-info">Jyutping 粵拼</button>
+        </div>
+    </div>
+
+    <div class="grid all_lyrics">
+        <div class="rabbit-lyrics lyrics_icon lang_yue speaker" data-media="#audio" data-alignment="center" data-view-mode="default">
+            [0:07.125] 🎤
+
+            [0:11.682] 🎤
+
+            [0:19.399] 🎤
+
+            [0:21.519] 🎤
+
+            [0:24.650] 🎤
+
+            [0:41.728] 🎤
+
+            [0:44.256] 🎤
+
+            [0:46.332] 🎤
+
+            [0:53.714] 🎤
+
+            [0:55.165] 🎤
+
+            [0:56.839] 🎤
+
+            [0:58.202] 🎤
+
+            [1:00.101] 🎤
+
+            [1:02.117] 🎤
+
+            [1:03.791] 🎤
+
+            [1:06.730] 🎤
+
+            [1:07.713] 🎤
+
+            [1:10.542] 🎤
+
+            [1:12.440] 🎤
+
+            [1:15.859] 🎤
+
+            [1:17.481] 🎤
+
+            [1:23.846] 🎤
+
+            [1:26.203] 🎤
+
+            [1:28.189] 🎤
+
+            [1:30.587] 🎤
+
+            [1:33.232] 🎤
+
+            [1:37.097] 🎤
+
+            [1:40.814] 🎤
+
+            [1:42.973] 🎤
+
+            [1:45.394] 🎤
+
+            [1:47.817] 🎤
+
+            [1:49.896] 🎤
+
+            [1:57.004] 🎤
+
+            [1:58.722] 🎤
+
+            [2:00.633] 🎤
+
+            [2:02.721] 🎤
+
+            [2:04.033] 🎤
+
+            [2:06.219] 🎤
+
+            [2:09.236] 🎤
+
+            [2:12.865] 🎤
+
+            [2:14.298] 🎤
+
+            [2:20.134] 👨‍🦳
+
+            [2:25.039] 👨‍🦳
+
+            [2:29.019] 👨‍🦳
+
+            [2:31.200] 👨‍🦳
+
+            [2:33.109] 👨‍🦳
+
+            [2:36.137] 👨‍🦳
+
+            [2:38.200] 👨‍🦳
+
+            [2:44.082] 👨‍🦳
+
+            [2:46.991] 👨‍🦳
+
+            [2:49.969] 👨‍🦳
+
+            [2:51.983] 👨‍🦳
+
+            [2:54.634] 👨‍🦳
+
+            [2:58.555] 👨‍🦳
+
+            [3:00.599] 👨‍🦳
+
+            [3:02.905] 👨‍🦳
+
+            [3:05.044] 👨‍🦳
+
+            [3:06.507] 👨‍🦳
+
+            [3:08.913] 👨‍🦳
+
+            [3:11.699] 👨‍🦳
+
+            [3:14.171] 👨‍🦳
+
+            [3:21.240] 👨‍🦳
+
+            [3:23.433] 👨‍🦳
+
+            [3:27.187] 👨‍🦳
+
+            [3:32.978] 👨‍🦳
+
+            [3:36.817] 👨‍🦳
+
+            [3:39.990] 👨‍🦳
+
+            [3:42.759] 👨‍🦳
+
+            [3:50.022] 🔐
+
+            [3:52.998] 👨‍🦳
+
+            [3:54.823] 👨‍🦳
+
+            [3:56.524] 👨‍🦳
+
+            [3:58.876] 👨‍🦳
+
+            [4:01.359] 🔐
+
+            [4:05.500] 🔐
+
+            [4:07.836] 👨‍🦳
+
+            [4:10.187] 👨‍🦳
+
+            [4:12.249] 👨‍🦳
+
+            [4:13.612] 👨‍🦳
+
+            [4:16.572] 👨‍🦳
+
+            [4:19.335] 🔐
+
+            [4:23.166] 👨‍🦳
+
+            [4:24.870] 👨‍🦳
+
+            [4:27.528] 👨‍🦳
+
+            [4:31.483] 👨‍🦳
+
+            [4:34.066] 👨‍🦳
+
+            [4:35.818] 👨‍🦳
+
+            [4:38.626] 👨‍🦳
+
+            [4:40.482] 🔐
+
+            [4:44.130] 🔐
+
+            [4:47.091] 🔐
+
+            [4:47.831] 🔐
+
+            [4:52.682] 🔐
+
+            [4:54.284] 👨‍🦳
+
+            [4:56.944] 👨‍🦳
+
+            [4:59.910] 👨‍🦳
+
+            [5:01.646] 👨‍🦳
+
+            [5:03.410] 👨‍🦳
+
+            [5:05.749] 👨‍🦳
+
+            [5:06.656] 👨‍🦳
+
+            [5:10.449] 🔐
+
+            [5:16.446] 👨‍🦳
+
+            [5:17.769] 👨‍🦳
+
+            [5:19.528] 🔐
+
+            [5:20.560] 🔐
+
+            [5:22.733] 👨‍🦳
+
+            [5:24.597] 👨‍🦳
+
+            [5:27.325] 👨‍🦳
+
+            [5:28.435] 👨‍🦳
+
+            [5:30.183] 👨‍🦳
+
+            [5:39.750] 🌿
+
+            [5:42.395] 🌿
+
+            [5:44.405] 🌿
+
+            [5:46.323] 👨‍🦳
+
+            [5:47.279] 👨‍🦳
+
+            [5:49.043] 👨‍🦳
+
+            [5:50.700] 👨‍🦳
+
+            [5:52.358] 👨‍🦳
+
+            [5:54.625] 🌿
+
+            [5:56.330] 👨‍🦳
+
+            [5:59.928] 🌿
+
+            [6:01.859] 👨‍🦳
+
+            [6:03.486] 🐷
+
+            [6:09.141] 🙍‍♀️
+
+            [6:11.720] 🐷
+
+            [6:13.534] 🙍‍♀️
+
+            [6:15.043] 👨‍🦳
+
+            [6:18.691] 👨‍🦳
+
+            [6:20.342] 👨‍🦳
+
+            [6:23.332] 🐷
+
+            [6:25.056] 🐷
+
+            [6:29.026] 👨‍🦳
+
+            [6:35.942] 👨‍🦳
+
+            [6:38.474] 👨‍🦳
+
+            [6:40.609] 👨‍🦳
+
+            [6:44.174] 👨‍🦳
+
+            [6:45.599] 🐷
+
+            [6:47.762] 👨‍🦳
+
+            [6:50.652] 🐷
+
+            [6:53.818] 👨‍🦳
+
+            [6:56.945] 👨‍🦳
+
+            [7:00.382] 👨‍🦳
+
+            [7:02.935] 🐷
+
+            [7:04.964] 👨‍🦳
+
+            [7:08.353] 👨‍🦳
+
+            [7:10.887] 👨‍🦳
+
+            [7:13.231] 👨‍🦳
+
+            [7:24.883] 🎤
+
+            [7:28.033] 🎤
+
+            [7:29.818] 🎤
+
+            [7:33.192] 🎤
+
+            [7:36.157] 🎤
+
+            [7:39.585] 🎤
+
+            [7:47.523] 👨‍🦳
+
+            [7:52.336] 👠
+
+            [7:54.845] 👨‍🦳
+
+            [7:57.798] 👨‍🦳
+
+            [7:59.302] 👨‍🦳
+
+            [8:01.024] 👨‍🦳
+
+            [8:03.538] 👨‍🦳
+
+            [8:05.179] 👨‍🦳
+
+            [8:07.384] 👠
+
+            [8:08.465] 👨‍🦳
+
+            [8:13.664] 🎀
+
+            [8:16.743] 🎀
+
+            [8:20.286] 👗
+
+            [8:24.341] 👗
+
+            [8:27.803] 👨‍🦳
+
+            [8:29.411] 👨‍🦳
+
+            [8:30.870] 👨‍🦳
+
+            [8:33.685] 👨‍🦳
+
+            [8:35.303] 👨‍🦳
+
+            [8:36.969] 👨‍🦳
+
+            [8:38.613] 👗
+
+            [8:42.275] 👨‍🦳
+
+            [8:45.625] 👨‍🦳
+
+            [8:48.389] 👨‍🦳
+
+            [8:49.414] 👨‍🦳
+
+            [8:52.178] 🎀
+
+            [8:55.183] 👨‍🦳
+
+            [8:58.633] 👨‍🦳
+
+            [9:01.445] 👨‍🦳
+
+            [9:04.355] 👨‍🦳
+
+            [9:06.709] 👨‍🦳
+
+            [9:10.163] 👗
+
+            [9:15.205] 🎀
+
+            [9:17.517] 🎀
+
+            [9:20.606] 👨‍🦳
+
+            [9:23.880] 👨‍🦳
+
+            [9:26.879] 👨‍🦳
+
+            [9:28.905] 👨‍🦳
+
+            [9:31.011] 👨‍🦳
+
+            [9:33.281] 👨‍🦳
+
+            [9:41.926] 🎀
+
+            [9:45.860] 👗
+
+            [9:47.004] 👗
+
+            [9:49.995] 👗
+
+            [9:54.038] 👗
+
+            [9:55.846] 👗
+
+            [9:58.636] 🎀
+
+            [10:01.738] 👗
+
+            [10:04.911] 👗
+
+            [10:06.131] 👗
+
+            [10:09.435] 👗
+
+            [10:12.249] 👗
+
+            [10:16.858] 🎀
+
+            [10:30.437] 🎤
+
+            [10:33.016] 🎤
+
+            [10:34.887] 🎤
+
+            [10:37.135] 🎤
+
+            [10:39.238] 🎤
+
+            [10:40.631] 🎤
+
+            [10:43.810] 👨‍🦳
+
+            [10:49.293] 👨‍🦳
+
+            [10:52.256] 👨‍🦳
+
+            [10:55.115] 👨‍🦳
+
+            [10:57.065] 👨‍🦳
+
+            [10:58.502] 👨‍🦳
+
+            [11:01.155] 👨‍🦳
+
+            [11:04.174] 👨‍🦳
+
+            [11:06.981] 👨‍🦳
+
+            [11:09.161] 👨‍🦳
+
+            [11:11.209] 👨‍🦳
+
+            [11:15.916] 👨‍🦳
+
+            [11:17.356] 👨‍🦳
+
+            [11:19.483] 👨‍🦳
+
+            [11:21.372] 👨‍🦳
+
+            [11:24.585] 👨‍🦳
+
+            [11:27.601] 👨‍🦳
+
+            [11:32.995] 👨‍🦳
+
+            [11:38.316] 👨‍🦳
+
+            [11:40.205] 👨‍🦳
+
+            [11:42.746] 👨‍🦳
+
+            [11:46.167] 👨‍🦳
+
+            [11:47.290] 👨‍🦳
+
+            [11:48.509] 👨‍🦳
+
+            [11:56.325] 👮
+
+            [11:58.392] 👮
+
+            [12:00.670] 👨‍🦳
+
+            [12:02.911] 👨‍🦳
+
+            [12:04.673] 👨‍🦳
+
+            [12:06.289] 👨‍🦳
+
+            [12:08.913] 👮
+
+            [12:11.716] 👨‍🦳
+
+            [12:14.363] 👨‍🦳
+
+            [12:17.202] 👨‍🦳
+
+            [12:18.723] 👨‍🦳
+
+            [12:19.594] 👨‍🦳
+
+            [12:21.433] 👨‍🦳
+
+            [12:23.886] 👮
+
+            [12:26.085] 👮
+
+            [12:28.277] 👮
+
+            [12:29.570] 👨‍🦳
+
+            [12:32.091] 👨‍🦳
+
+            [12:33.888] 👨‍🦳
+
+            [12:35.567] 👨‍🦳
+
+            [12:38.263] 👨‍🦳
+
+            [12:39.505] 👨‍🦳
+
+            [12:42.815] 👨‍🦳
+
+            [12:46.534] 👨‍🦳
+
+            [12:48.068] 👮
+
+            [12:49.616] 👮
+
+            [12:52.236] 👮
+
+            [13:01.753] 👮‍♀️
+
+            [13:04.214] 🔐
+
+            [13:07.028] 🔐
+
+            [13:11.527] 👨‍🦳
+
+            [13:13.843] 👨‍🦳
+
+            [13:16.443] 👨‍🦳
+
+            [13:18.562] 👨‍🦳
+
+            [13:22.099] 👮‍♀️
+
+            [13:24.427] 🔐
+
+            [13:27.533] 👮‍♀️
+
+            [13:30.924] 👮‍♀️
+
+            [13:32.585] 👮‍♀️
+
+            [13:34.096] 🔐
+
+            [13:36.702] 🔐
+
+            [13:39.456] 👮‍♀️
+
+            [13:41.086] 👨‍🦳
+
+            [13:43.149] 👨‍🦳
+
+            [13:46.375] 🔐
+
+            [13:49.238] 🔐
+
+            [13:51.292] 👨‍🦳
+
+            [13:53.907] 👨‍🦳
+
+            [13:57.265] 👨‍🦳
+
+            [13:59.731] 👨‍🦳
+
+            [14:01.516] 🔐
+
+            [14:04.210] 👮‍♀️
+
+            [14:07.973] 👮‍♀️
+
+            [14:11.309] 👨‍🦳
+
+            [14:13.554] 👨‍🦳
+
+            [14:15.570] 👨‍🦳
+
+            [14:18.863] 🔐
+
+            [14:21.878] 🔐
+
+            [14:26.078] 🔐
+
+            [14:28.387] 👨‍🦳
+
+            [14:31.100] 👮‍♀️
+
+            [14:32.612] 👮‍♀️
+
+            [14:35.289] 👮‍♀️
+
+            [14:36.576] 👨‍🦳
+
+            [14:43.927] 👮‍♀️
+
+            [14:46.383] 👮‍♀️
+
+            [14:47.633] 👮‍♀️
+
+            [14:50.219] 🔐
+
+            [14:54.204] 🔐
+
+            [14:55.844] 🔐
+
+            [14:58.527] 👮‍♀️
+
+            [15:01.160] 🔐
+
+            [15:04.659] 🔐
+
+            [15:06.555] 🔐
+
+            [15:09.289] 🔐
+
+            [15:11.699] 🔐
+
+            [15:13.628] 👮‍♀️
+
+            [15:16.055] 👮‍♀️
+
+            [15:17.740] 👮‍♀️
+
+            [15:19.700] 🔐
+
+            [15:22.985] 🔐
+
+            [15:26.311] 🔐
+
+            [15:29.078] 🔐
+
+            [15:30.969] 🔐
+
+            [15:33.613] 🔐
+
+            [15:35.785] 🔐
+
+            [15:38.335] 👮‍♀️
+
+            [15:41.158] 👮‍♀️
+
+            [15:42.632] 🔐
+
+            [15:43.420] 👮‍♀️
+
+            [15:47.012] 🔐
+
+            [15:49.427] 🔐
+
+            [15:51.744] 🔐
+
+            [15:54.298] 👮‍♀️
+
+            [15:57.516] 🔐
+
+            [16:00.955] 🔐
+
+            [16:03.651] 🔐
+
+            [16:07.392] 👮‍♀️
+
+            [16:10.378] 🔐
+
+            [16:13.521] 🔐
+
+            [16:16.402] 👮‍♀️
+
+            [16:19.146] 👮‍♀️
+
+            [16:21.994] 👮‍♀️
+
+            [16:23.145] 🔐
+
+            [16:26.569] 🔐
+
+            [16:29.013] 👮‍♀️
+
+            [16:30.172] 🔐
+
+            [16:33.220] 🔐
+
+            [16:34.598] 🔐
+
+            [16:36.497] 🔐
+
+            [16:39.850] 🔐
+
+            [16:43.391] 🔐
+
+            [16:45.902] 🔐
+
+            [16:48.471] 🔐
+
+            [16:50.087] 🔐
+
+            [16:52.666] 🔐
+
+            [16:55.098] 🔐
+
+            [16:57.502] 🔐
+
+            [16:59.150] 🔐
+
+            [17:01.516] 🔐
+
+            [17:03.708] 🔐
+
+            [17:06.756] 🔐
+
+            [17:08.469] 🔐
+
+            [17:10.749] 🔐
+
+            [17:12.285] 🔐
+
+            [17:17.557] 👮‍♀️
+
+            [17:19.671] 🔐
+
+            [17:20.767] 👮‍♀️
+
+            [17:21.685] 👮‍♀️
+
+            [17:24.345] 👮‍♀️
+
+            [17:26.841] 🔐
+
+            [17:30.015] 👮‍♀️
+
+            [17:33.421] 🔐
+
+            [17:57.722] 👨‍🦳
+
+            [17:59.594] 👨‍🦳
+
+            [18:02.278] 👨‍🦳
+
+            [18:04.771] 👨‍🦳
+
+            [18:08.250] 👮‍♀️
+
+            [18:10.156] 🔐
+
+            [18:24.825] 🎤
+
+            [18:27.429] 🎤
+
+            [18:29.498] 🎤
+
+            [18:31.877] 🎤
+
+            [18:33.700] 🎤
+
+            [18:35.100] 🎤
+
+            [18:43.130] 👨‍🦳
+
+            [18:46.309] 😓
+
+            [18:49.991] 👨‍🦳
+
+            [18:53.483] 👨‍🦳
+
+            [18:56.843] 😓
+
+            [18:57.850] 😩
+
+            [19:00.005] 😓
+
+            [19:01.986] 😓
+
+            [19:03.890] 😓
+
+            [19:06.604] 😓
+
+            [19:08.630] 😩
+
+            [19:11.174] 😩
+
+            [19:13.228] 😓
+
+            [19:15.355] 😓
+
+            [19:18.905] 😩
+
+            [19:21.189] 😩
+
+            [19:23.050] 😩
+
+            [19:24.668] 😩
+
+            [19:26.244] 😩
+
+            [19:30.056] 😩
+
+            [19:32.842] 👨‍🦳
+
+            [19:36.840] 👨‍🦳
+
+            [19:39.546] 👨‍🦳
+
+            [19:41.340] 👨‍🦳
+
+            [19:47.755] 👨‍🦳
+
+            [19:48.990] 👨‍🦳
+
+            [19:51.995] 👨‍🦳
+
+            [19:53.177] 😩
+
+            [19:56.526] 👨‍🦳
+
+            [20:09.636] 👨‍🦳
+
+            [20:12.324] 👨‍🦳
+
+            [20:13.577] 👮‍♀️
+
+            [20:16.766] 👨‍🦳
+
+            [20:19.880] 👨‍🦳
+
+            [20:23.579] 👮‍♀️
+
+            [20:26.053] 👨‍🦳
+
+            [20:29.148] 👨‍🦳
+
+            [20:31.181] 👮‍♀️
+
+            [20:33.624] 👮‍♀️
+
+            [20:35.578] 👨‍🦳
+
+            [20:38.882] 👨‍🦳
+
+            [20:40.589] 👨‍🦳
+
+            [20:43.927] 👨‍🦳
+
+            [20:47.763] 👮‍♀️
+
+            [20:50.837] 👮‍♀️
+
+            [20:52.108] 👮‍♀️
+
+            [20:53.621] 👮‍♀️
+
+            [20:55.543] 👨‍🦳
+
+            [20:58.329] 👨‍🦳
+
+            [21:06.984] 👮‍♀️
+
+            [21:10.983] 👨‍🦳
+
+            [21:13.283] 👨‍🦳
+
+            [21:27.802] 🎤
+
+            [21:30.771] 🎤
+
+            [21:31.903] 🎤
+
+            [21:35.068] 🎤
+
+            [21:37.647] 🎤
+
+            [21:39.603] 🎤
+
+            [21:43.162] 🎤
+
+            [21:47.460] 🎤
+
+            [21:50.638] 🎤
+
+            [22:01.474] 🎤
+
+        </div>
+
+        <div id="lyricsContainer" class="rabbit-lyrics lyrics_zh chinese" data-media="#audio" data-alignment="left" data-view-mode="default">
+            [0:07.125] 由|學識|網上|教學育平台| |hok|6|.|com| |主辦
+            <div class="lyrics_latin">Organizado por la plataforma de aprendizaje en línea "hok6.com"</div>
+            [0:11.682] 我|都要|做|廣播劇
+                <div class="lyrics_latin">"Yo también quiero hacer Radioteatro"</div>
+            [0:19.399] 第|二|集| |學員|作品
+                <div class="lyrics_latin">Episodio 2 del trabajo de los estudiantes</div>
+            [0:21.519] 往事如煙|・|一個|老人
+                <div class="lyrics_latin">Un pasado disperso: Historia de un anciano</div>
+            [0:24.650] 鳴謝| |D100| |提供|製作|和|播出
+                <div class="lyrics_latin">Damos las gracias a D100 por la producción y difusión</div>
+            [0:41.728] 往事如煙|・|一個|老人
+                <div class="lyrics_latin">Un pasado disperso: Historia de un anciano</div>
+            [0:44.256] 編劇|：| |福爾摩姿
+                <div class="lyrics_latin">Guión: Sherlock Cheese</div>
+            [0:46.332] 改編|自| |梓明| |往事如煙|・|一個|老人
+                <div class="lyrics_latin">adaptado de Tsz Ming: A Past Dispersed: Tale of an Old Man</div>
+            [0:53.714] 故事|大綱
+                <div class="lyrics_latin">Resumen</div>
+            [0:55.165] 王～～伯|住喺|唐樓|，
+                <div class="lyrics_latin">El tío Wong vive en un viejo edificio,</div>
+            [0:56.839] 雖然|人|到|老年|，
+                <div class="lyrics_latin">y aunque es viejo,</div>
+            [0:58.202] 但|依然|積極|享受|生活|。
+                <div class="lyrics_latin">sigue disfrutando activamente de su vida.</div>
+            [1:00.101] 每日|都會|去|街市|買餸|，
+                <div class="lyrics_latin">Todos los días compra comida en el mercado,</div>
+            [1:02.117] 為|妻子|準備|晚飯|，
+                <div class="lyrics_latin">prepara la cena para su mujer,</div>
+            [1:03.791] 有時|仲會|為|鄰居|陳太～買|生果|㖭|。
+                <div class="lyrics_latin">y a veces compra fruta para su vecina, la Sra. Chan.</div>
+            [1:06.730] 有|一日|，
+                <div class="lyrics_latin">Un día,</div>
+            [1:07.713] 王～～伯|為|炮製|妻子|嘅|生日|飯|去|買餸|，
+                <div class="lyrics_latin">el tío Wong estaba comprando ingredientes para preparar un banquete de cumpleaños para su esposa,</div>
+            [1:10.542] 點知|就|比|肉檔|呃|嘞|，
+                <div class="lyrics_latin">sin esperar que el carnicero le engañara,</div>
+            [1:12.440] 同時|佢|亦都|發現|陳太～|似乎|出左|意外|，
+                <div class="lyrics_latin">Y descubrió también que la Sra. Chan parecía haber tenido un accidente.</div>
+            [1:15.859] 情急之下|報警|，
+                <div class="lyrics_latin">El tío Wong llamó a la policía para pedir ayuda de emergencia,</div>
+            [1:17.481] 竟然|揭露|咗|令人|意料之外|嘅|真相|…
+                <div class="lyrics_latin">pero esto reveló la sorprendente verdad...</div>
+            [1:23.846] 往事如煙|・|一個|老人
+                <div class="lyrics_latin">Un pasado disperso: historia de un anciano</div>
+            [1:26.203] 小魂| |飾演| |王～～伯
+                <div class="lyrics_latin">Alma pequeña: Tío Wong</div>
+            [1:28.189] 王|林| |飾演| |看更|宋生
+                <div class="lyrics_latin">Wong Lam: Sr. Sung, el guardia</div>
+            [1:30.587] 劉小小| |飾演| |菜檔|老闆
+                <div class="lyrics_latin">Lausita: Tendero de verduras</div>
+            [1:33.232] 草船| |飾演| |肉檔|老闆|、|年青人|A
+                <div class="lyrics_latin">Pajera: Carnicero, Juventud A</div>
+            [1:37.097] 茶渣| |飾演| |買|肉|客人|、|年青人|B
+                <div class="lyrics_latin">Tealeaves: Comprador, Joven B</div>
+            [1:40.814] 小飛飛| |飾演| |OL
+                <div class="lyrics_latin">Vuelo: Office Lady</div>
+            [1:42.973] 福爾摩姿| |飾演| |師奶|A
+                <div class="lyrics_latin">Sherlock Cheese: señora A</div>
+            [1:45.394] 滿滿魚| |飾演| |師奶|B
+                <div class="lyrics_latin">Pez Perfecto: dama B</div>
+            [1:47.817] 肥利| |飾演| |女警
+                <div class="lyrics_latin">Ivylie: mujer policía</div>
+            [1:49.896] 王德全| |負責| |旁白
+                <div class="lyrics_latin">Wong Tak Chuen: Narrador</div>
+            [1:57.004] （|輕鬆|鬼馬|）|王～～伯|今年|70|歲|，
+                <div class="lyrics_latin">El tío Wong tiene ahora 70 años,</div>
+            [1:58.722] 住喺|深水埗|嘅|唐樓|，
+                <div class="lyrics_latin">Vive en un viejo edificio en Shum Shui Po.</div>
+            [2:00.633] 退咗休|好多年|㗎|喇|。
+                <div class="lyrics_latin">se jubiló hace muchos años.</div>
+            [2:02.721] 佢|為人|熱心|，
+                <div class="lyrics_latin">Está deseando ayudar,</div>
+            [2:04.033] 好鍾意|同|鄰居|傾偈|，
+                <div class="lyrics_latin">Le encanta charlar con sus vecinos,</div>
+            [2:06.219] 但係|就|唔多|滿意|大家|叫佢|王～～伯|嘞～～～|，
+                <div class="lyrics_latin">pero no le hace mucha gracia que le llamen "tío Wong".</div>
+            [2:09.236] 因為|佢|成日|都|覺得|自己|仲係|好後生|噉|喎～～～～|。
+                <div class="lyrics_latin">Porque piensa que todavía es muy joven.</div>
+            [2:12.865] 嗱嗱嗱| |你|睇吓|！
+                <div class="lyrics_latin">¡Eh, eh, eh, mira!</div>
+            [2:14.298] 佢|又|喺度|好|姿整|噉|照鏡|喇|。
+                <div class="lyrics_latin">Se está admirando en el espejo otra vez.</div>
+            [2:20.134] （|吹|幾|聲～～|口哨|，|心情|愉悅|）
+                <div class="lyrics_latin">(silbando alegremente)</div>
+            [2:25.039] 我|個樣|睇落去|不過|係|40|歲出頭|啫|，
+                <div class="lyrics_latin">Mi aspecto es el de alguien de unos 40 años</div>
+            [2:29.019] 點都|唔應該|叫我|做|阿伯|啩|，
+                <div class="lyrics_latin">Realmente no hay razón para llamarme tío.</div>
+            [2:31.200] 啲|人|認～真|冇|眼力|嘅|。
+                <div class="lyrics_latin">La gente realmente necesita mirar con más cuidado.</div>
+            [2:33.109] 實|係|我|後生|嘅|時候|做嘢|太辛苦|嘞～～～|，
+                <div class="lyrics_latin">Probablemente sea porque trabajé demasiado cuando era joven,</div>
+            [2:36.137] 搞到|白頭髮|多咗|幾條|。
+                <div class="lyrics_latin">y por eso hay algunos cabellos blancos aquí y allá.</div>
+            [2:38.200] 啊|！|攞啲|髮膠|gel|下～～～個|頭先|。
+                <div class="lyrics_latin">Ah, déjame gel mi pelo</div>
+            [2:44.082] 搞掂|，|即刻|精神|晒|！
+                <div class="lyrics_latin">Eso es, ¡parece mucho más enérgico!</div>
+            [2:46.991] （|整理|衣服|）|咦|？| |件|衫|皺～|皺～地～|嘅～|！
+                <div class="lyrics_latin">(arreglándose la ropa) ¿Eh? ¡La camisa está arrugada!</div>
+            [2:49.969] 喂|老婆|老婆|！
+                <div class="lyrics_latin">¡Eh, cariño, cariño!</div>
+            [2:51.983] 你|做乜|唔|幫我|燙|下～～～|呢件|衫|啊|？
+                <div class="lyrics_latin">¿Por qué no me planchaste la camisa?</div>
+            [2:54.634] 老婆|？|又|喺度|同啲|師奶|傾電話|。
+                <div class="lyrics_latin">¿Cariño? Hablando por teléfono con las damas.</div>
+            [2:58.555] 算喇|算喇算喇算喇|。
+                <div class="lyrics_latin">Voy a dejarlo pasar</div>
+            [3:00.599] 今日|係|你|生日|你|大晒|，
+                <div class="lyrics_latin">Hoy es tu cumpleaños así que consigue todo lo que quieras</div>
+            [3:02.905] 我|要去|街市|買|啲|好|餸|返嚟
+                <div class="lyrics_latin">Voy al mercado a comprar buenos ingredientes.</div>
+            [3:05.044] 同你|慶祝|一下|。
+                <div class="lyrics_latin">para celebrarlo contigo.</div>
+            [3:06.507] 我|叫咗|阿女|返嚟|食飯|㗎|喇|！
+                <div class="lyrics_latin">¡Ya le he pedido a nuestra hija que venga a cenar a casa!</div>
+            [3:08.913] （|自言自語|）|老婆|最鍾意|食|酸甜排骨|，
+                <div class="lyrics_latin">(Las costillas agridulces son las favoritas de mi mujer.</div>
+            [3:11.699] 整|俾佢食|實|開心|啫|！
+                <div class="lyrics_latin">Estará encantada si se lo preparo.</div>
+            [3:14.171] 老婆|，|我|出去|喇|！
+                <div class="lyrics_latin">¡Cariño, me voy!</div>
+            [3:21.240] 啊|，|隔離屋|陳太～
+                <div class="lyrics_latin">Oh, la Sra. Chan de al lado</div>
+            [3:23.433] 尋日|好似|話|叫我|幫佢|買個|沙田柚|㗎喎|。
+                <div class="lyrics_latin">Ayer me pidió que le comprara un pomelo.</div>
+            [3:27.187] 陳太～|陳太～|，|你|係咪|要|沙田柚|啊|？
+                <div class="lyrics_latin">Sra. Chan Sra. Chan, ¿quiere un pomelo?</div>
+            [3:32.978] 日上三竿|啦|都|，|仲未|起身|嘅～|？
+                <div class="lyrics_latin">Es tarde en la mañana, ¿y ella todavía está durmiendo?</div>
+            [3:36.817] 喂|陳太～|呀～～| |我|照|幫|你|買|先|喇|，
+                <div class="lyrics_latin">Hola Sra. Chan, voy a buscarle el pomelo,</div>
+            [3:39.990] 費事|你|陣間|拜神|冇得用|啊|。
+                <div class="lyrics_latin">para ahorrarle la molestia de hacer ofrendas a los dioses y no tener uno cerca.</div>
+            [3:42.759] 關心|鄰居|，|由|我做|起|！
+                <div class="lyrics_latin">Todos deberíamos preocuparnos por nuestros vecinos, así que ¡déjame dar buen ejemplo!</div>
+            [3:50.022] 早晨|啊|王～～伯|！| |去|買餸|呀～～|？
+                <div class="lyrics_latin">¡Buenos días, tío Wong! ¿Estás de compras?</div>
+            [3:52.998] 係|啊|宋生|，
+                <div class="lyrics_latin">Sí, Sr. Sung,</div>
+            [3:54.823] 今日|老婆|生日
+                <div class="lyrics_latin">Hoy es el cumpleaños de Wifey.</div>
+            [3:56.524] 要|煮|餐|好|餸|俾佢食|吖嘛|，
+                <div class="lyrics_latin">Tengo que cocinar algo delicioso para ella</div>
+            [3:58.876] 阿囡|今日|都會|返嚟|食飯|啊|。
+                <div class="lyrics_latin">Nuestra hija también viene a cenar.</div>
+            [4:01.359] 真係|好啊|，|天倫之樂|，
+                <div class="lyrics_latin">Eso es tan bueno, las alegrías de una familia,</div>
+            [4:05.500] 真係|令人|羨慕|啊|。
+                <div class="lyrics_latin">Da envidia a todo el mundo.</div>
+            [4:07.836] 哈哈|！|不過|呢|，
+                <div class="lyrics_latin">Jaja, pero,</div>
+            [4:10.187] 成日|都|忙|忙碌|碌|噉囉|！| 
+                <div class="lyrics_latin">¡eso hace que tenga todo el día ocupado!</div>
+            [4:12.249] 你|知|㗎|啦|，
+                <div class="lyrics_latin">Ya sabes,</div>
+            [4:13.612] 買餸|煮飯|好|花|功夫|𠺢嘛|。
+                <div class="lyrics_latin">Hacer la compra y cocinar requiere mucha atención.</div>
+            [4:16.572] 陣間|仲要|幫埋|陳太～|買|沙田柚|㖭|喎|！
+                <div class="lyrics_latin">¡Y más tarde tengo que coger un pomelo para la Sra. Chan!</div>
+            [4:19.335] 噉|有得|忙|都係|好事|嚟|嘅～|。
+                <div class="lyrics_latin">Tener algo por lo que estar ocupado es algo bueno.</div>
+            [4:23.166] 大家噉話|啦|！
+                <div class="lyrics_latin">Eso también es cierto para ti.</div>
+            [4:24.870] 我|仲未|約|我|班|老友|飲茶|㖭|。
+                <div class="lyrics_latin">Todavía no he organizado una hora para jam2 caa4 con mis amigos.</div>
+            [4:27.528] 吖嗱|最近|阿囡|送咗|部|新|電話|俾|我|，
+                <div class="lyrics_latin">Ah, sí, mi hija me acaba de regalar un teléfono nuevo</div>
+            [4:31.483] 不過|呢|send|訊息|俾|啲|朋友|呢
+                <div class="lyrics_latin">Pero cuando envío mensajes a mis amigos</div>
+            [4:34.066] 就|成日||收唔到|回覆|嘅～|。
+                <div class="lyrics_latin">Se pierde muchas de las respuestas</div>
+            [4:35.818] 依|一啲|咩|乜鬼|智能電話
+                <div class="lyrics_latin">Estos llamados teléfonos inteligentes</div>
+            [4:38.626] 真係|唔係好識|用|嘅|唧～|。
+                <div class="lyrics_latin">Realmente no sé cómo usarlos.</div>
+            [4:40.482] 智能電話|啊|？| |哈哈|，
+                <div class="lyrics_latin">¿Teléfonos inteligentes? Jaja</div>
+            [4:44.130] 都|真係|幾難|用|嘅～|。
+                <div class="lyrics_latin">Pueden ser bastante difíciles de manejar</div>
+            [4:47.091] 啊|，|係喇|，
+                <div class="lyrics_latin">Ah, sí,</div>
+            [4:47.831] 王～～伯|啊|你|對|鞋|呢|係咪|穿|咗|個|窿|啊|，
+                <div class="lyrics_latin">Tío Wong, es que un agujero en este par de zapatos,</div>
+            [4:52.682] 好聲行|喎|。
+                <div class="lyrics_latin">¡ten cuidado por donde caminas!</div>
+            [4:54.284] 呢點|你|就|有所不知|喇|。
+                <div class="lyrics_latin">Esto no lo sabes</div>
+            [4:56.944] 皮鞋|要|舊|先好|著|𠺢嘛|。
+                <div class="lyrics_latin">Los zapatos de cuero son mejores cuando son viejos.</div>
+            [4:59.910] 新|嗰啲|買|返嚟|，
+                <div class="lyrics_latin">Los recién comprados,</div>
+            [5:01.646] 唔係|刮腳|就|太硬|，
+                <div class="lyrics_latin">o son duras para los pies o simplemente demasiado duras,</div>
+            [5:03.410] 著|到|成個|人|都好|唔自在|噉|。
+                <div class="lyrics_latin">Y eso trae molestias a todo</div>
+            [5:05.749] 話|你|聽|，
+                <div class="lyrics_latin">Déjame decirte,</div>
+            [5:06.656] 皮鞋|有如|女人|，|舊|嘅|先好|嘅|。
+                <div class="lyrics_latin">los zapatos de cuero son como las mujeres, mejoran cuanto más tiempo pasas con ellos.</div>
+            [5:10.449] 哈哈|。|王～～伯|，|你|真係|專一|啊|。
+                <div class="lyrics_latin">Jaja, tío Wong, eres el más dedicado a tu mujer.</div>
+            [5:16.446] 啊|唔同|你|講住|喇|，
+                <div class="lyrics_latin">Siento no poder hablar contigo.</div>
+            [5:17.769] 實|係|我|啲|朋友|搵|我|啊|！
+                <div class="lyrics_latin">¡Probablemente son mis amigos buscándome!</div>
+            [5:19.528] 哦|好啦|好啦|，
+                <div class="lyrics_latin">Oh ok ok</div>
+            [5:20.560] bye|-|bye| |bye|-|bye| |小心啲|行|嗄|！
+                <div class="lyrics_latin">Adiós, cuídate.</div>
+            [5:22.733] 喂～|？|咩|嘢|話|？
+                <div class="lyrics_latin">Hola? ¿Qué cosa?</div>
+            [5:24.597] 專科|醫療|中心|周|小姐|呀|？
+                <div class="lyrics_latin">¿Centro de salud profesional Sra. Chow?</div>
+            [5:27.325] 又係|你|啊|？
+                <div class="lyrics_latin">¿Otra vez usted?</div>
+            [5:28.435] 我|咪|叫咗|你|唔好|打嚟|囉|，
+                <div class="lyrics_latin">Te dije que no volvieras a llamar,</div>
+            [5:30.183] 不知幾|健康|啊|！
+                <div class="lyrics_latin">¡Estoy totalmente sano!</div>
+            [5:39.750] 埋嚟|睇埋|嚟|揀|喇|喂|，
+                <div class="lyrics_latin">¡Ven a mirar, ven a elegir!</div>
+            [5:42.395] 今日|啲|菜心|又|平|又靚|，
+                <div class="lyrics_latin">El coi4 sam1 hoy es barato y es bueno</div>
+            [5:44.405] 10|蚊|兩|斤|咋|喂|！
+                <div class="lyrics_latin">¡Diez dólares por dos catty!</div>
+            [5:46.323] 啊|靚女|呀|，
+                <div class="lyrics_latin">Hola guapa,</div>
+            [5:47.279] 俾|兩|斤|菜心|我|吖|唔該|。
+                <div class="lyrics_latin">Dos catty de coi4 sam1 por favor</div>
+            [5:49.043] 啊|今日|老婆|生日|啊|，
+                <div class="lyrics_latin">Hoy es el cumpleaños de Wifey</div>
+            [5:50.700] 阿囡|又|返嚟|食飯|喎|，
+                <div class="lyrics_latin">y la hija también viene a cenar.</div>
+            [5:52.358] 幫我|揀|幾條|最|新鮮|嘅|！
+                <div class="lyrics_latin">¡ayúdame a elegir los más frescos!</div>
+            [5:54.625] 又係|你|呀|，|王～～伯|。
+                <div class="lyrics_latin">Eres tú otra vez, tío Wong.</div>
+            [5:56.330] 係|啊|，|送|多|兩條|蔥|嚟|吖|。
+                <div class="lyrics_latin">Sí, y más cebolletas como lagniappe.</div>
+            [5:59.928] 嚟|嚟|嚟|嚟|，|攞去啦|。
+                <div class="lyrics_latin">aquí aquí, toma esto</div>
+            [6:01.859] 多謝|晒|！
+                <div class="lyrics_latin">¡Gracias!</div>
+            [6:03.486] 新鮮|豬肉|啊| |新鮮|豬肉|！|靚女|要|咩|啊|！
+                <div class="lyrics_latin">¡Cerdo fresco! ¡Cerdo fresco! ¿Qué te gustaría bonita?</div>
+            [6:09.141] ai6|俾|60|蚊|梅頭|啊|唔該|。
+                <div class="lyrics_latin">60 dólares de cerdo graso por favor</div>
+            [6:11.720] 65|蚊|啦|！
+                <div class="lyrics_latin">¡65 dólares!</div>
+            [6:13.534] aai2| |好啦|好啦|。
+                <div class="lyrics_latin">fino fino</div>
+            [6:15.043] 哥哥仔|，|誒|俾|半|斤|最靚|嘅|排骨|我|，
+                <div class="lyrics_latin">Lil' bro, half a catty of your finest ribs</div>
+            [6:18.691] 價錢|唔係|問題|，
+                <div class="lyrics_latin">El precio no importa</div>
+            [6:20.342] 今日|老婆|生日|要|煮|餐|好嘅|俾佢食|啊|！
+                <div class="lyrics_latin">¡Hoy es el cumpleaños de Wifey así que tengo que cocinar algo bueno para ella!</div>
+            [6:23.332] 王～～伯|你|又嚟|嘞|。
+                <div class="lyrics_latin">Tío Wong estás aquí de nuevo</div>
+            [6:25.056] 點|啊|，|阿囡|今晚～～|又|返嚟|食飯|呀～～|？
+                <div class="lyrics_latin">¿Qué, tu hija ha vuelto para cenar otra vez?</div>
+            [6:29.026] （|語氣|風騷|）|係|啊| |哥哥仔|你|真係|醒目|唧～|。
+                <div class="lyrics_latin">Sí, hermanito eres tan inteligente</div>
+            [6:35.942] 喂| |記得|揀|靚啲|排骨|俾|我|啊|。
+                <div class="lyrics_latin">Oye, acuérdate de darme las mejores partes de las costillas.</div>
+            [6:38.474] 今晚～～|要|煮|酸甜排骨|啊|。
+                <div class="lyrics_latin">Esta noche estoy haciendo costillas agridulces</div>
+            [6:40.609] 嗱|，|呢～～～～～～～～～～|味|餸|啊|唔係|咁易|整|㗎|，
+                <div class="lyrics_latin">Te diré que este plato no es tan fácil de hacer,</div>
+            [6:44.174] 有|好鬼多|技巧|㗎|…
+                <div class="lyrics_latin">y hay mucha técnica involucrada...</div>
+            [6:45.599] 半|斤|排骨|58|蚊|嗄|。
+                <div class="lyrics_latin">Medio catty de costillas es de 58 dólares</div>
+            [6:47.762] 嘩～|，|今日|啲|排骨|好|墜手|喎|！
+                <div class="lyrics_latin">¡Wow, las costillas se sienten muy pesadas!</div>
+            [6:50.652] 係|啊|係|啊|。|特登|醒～|你|吖嘛|。
+                <div class="lyrics_latin">Sí, sí, especial para ti.</div>
+            [6:53.818] 真係|多謝|晒|喎|！
+                <div class="lyrics_latin">¡Muchas gracias!</div>
+            [6:56.945] 誒|我|而家|去|超市|買|沙田柚|喇|，
+                <div class="lyrics_latin">Ahora voy al supermercado a comprar pomelos,</div>
+            [7:00.382] 係|隔籬|屋|陳太～|拜託|我|買|㗎|…
+                <div class="lyrics_latin">Es una petición de mi vecina la señora Chan</div>
+            [7:02.935] 好行| |好行夾唔送|嗄|。
+                <div class="lyrics_latin">Ve tan rápido como puedas.</div>
+            [7:04.964] 而家|啲|後生仔|語氣|真係|呢|
+                <div class="lyrics_latin">La juventud de hoy en día, no tiene respeto...</div>
+            [7:08.353] 不過|真係|行|快啲|喇|，
+                <div class="lyrics_latin">Pero realmente necesito caminar más rápido</div>
+            [7:10.887] 陣間|買|完|生果|仲要|返去|煮飯|。
+                <div class="lyrics_latin">En un momento después de comprar fruta todavía tengo que cocinar.</div>
+            [7:13.231] 唉|啊|，|啲|時間|真係|好|唔夠|用|！
+                <div class="lyrics_latin">Ouch, ¡el tiempo realmente no es suficiente!</div>
+            [7:24.883] 王～～伯|喺|街市|買|完|餸|之後|心情|大好|，
+                <div class="lyrics_latin">Tío Wong es extra alegre después de comestibles en el mercado húmedo,</div>
+            [7:28.033] 之後|又|到|超市|買嘢|。
+                <div class="lyrics_latin">y fue al supermercado a continuación.</div>
+            [7:29.818] 經過|商場|嘅|時候|撞正|放飯|時間|喎|，
+                <div class="lyrics_latin">Cuando pasó por el centro comercial era la hora de comer,</div>
+            [7:33.192] 見到|唔少|打扮|時髦|嘅|靚女|OL|，
+                <div class="lyrics_latin">y cuando ve a las oficinistas vestidas a la moda,</div>
+            [7:36.157] 王～～伯|啊|，|都會|同|佢哋|點頭|示意|。
+                <div class="lyrics_latin">Tío Wong, les saludará con la cabeza...</div>
+            [7:39.585] 嗱嗱嗱|，|你哋|睇下|.|.|.
+                <div class="lyrics_latin">Ahora ahora, vamos a ver...</div>
+            [7:47.523] （|口哨|）|優雅|嘅|女士|你|好啊|.|.|.
+                <div class="lyrics_latin">(silbato) Graciosa dama, hola a ti..</div>
+            [7:52.336] 望|咩|啊|望| |阿伯|。
+                <div class="lyrics_latin">Lo que estás mirando, tío</div>
+            [7:54.845] 女士|，|你|千奇唔好|誤會|啊|，
+                <div class="lyrics_latin">Señora, no debe equivocarse</div>
+            [7:57.798] 我|唔係|調戲|你|，
+                <div class="lyrics_latin">No estoy coqueteando con usted</div>
+            [7:59.302] 亦都|唔係|花心|，
+                <div class="lyrics_latin">Y no soy un jugador</div>
+            [8:01.024] 我|深深|愛|住|我|妻子|㗎|。
+                <div class="lyrics_latin">Quiero mucho a mi mujer.</div>
+            [8:03.538] 同你|打個|招呼|，
+                <div class="lyrics_latin">Un saludo</div>
+            [8:05.179] 只不過|係|禮貌|之|舉|啫|。
+                <div class="lyrics_latin">es porque tengo buenos modales.</div>
+            [8:07.384] 痴線|。
+                <div class="lyrics_latin">Nueces.</div>
+            [8:08.465] 嘿|。
+                <div class="lyrics_latin">Je je je.</div>
+            [8:13.664] 你|話|呢～～～～～～～～～～|兩|隻|麥皮|邊隻|好|呢|？
+                <div class="lyrics_latin">¿Qué dice usted, cuál de estos dos avena es mejor?</div>
+            [8:16.743] 個樣|望|落|又|差唔多|喎|。
+                <div class="lyrics_latin">Hmm ... Se ven muy similares</div>
+            [8:20.286] 聽講|呢款|好難|消化|㗎|，
+                <div class="lyrics_latin">He oído que este tipo es difícil de digerir</div>
+            [8:24.341] 嗰|款|呀| |睇落去|個|味|冇|咁|寡|囉。
+                <div class="lyrics_latin">Ese, no me parece tan simple en sabor.</div>
+            [8:27.803] 兩位|美麗嘅|太太|，
+                <div class="lyrics_latin">Dos hermosas damas</div>
+            [8:29.411] 你哋|講緊|麥皮|呀|？
+                <div class="lyrics_latin">¿Estás hablando de avena?</div>
+            [8:30.870] 咁啱|我|最近|開始|食|麥皮|早餐|。
+                <div class="lyrics_latin">Es una coincidencia que haya empezado a desayunar avena</div>
+            [8:33.685] 呢～～～～～～～～～～位|太太|攞住|嗰|款|呢|，
+                <div class="lyrics_latin">La que sostiene esta señora,</div>
+            [8:35.303] 入邊|加咗|果|乾|，
+                <div class="lyrics_latin">Tiene frutas secas añadidas</div>
+            [8:36.969] 特別|好食|㗎|。
+                <div class="lyrics_latin">Y es extra sabroso</div>
+            [8:38.613] 我|都話|呢～～～～～～～～～～款|好食|㗎|啦|。
+                <div class="lyrics_latin">Dije que este es el más sabroso</div>
+            [8:42.275] 嗱|，|揀|麥皮|呢|，|真係|唔易|嘅|，
+                <div class="lyrics_latin">Ves, elegir la avena, no es tan fácil,</div>
+            [8:45.625] 唔係|太|清淡|就係|太硬|。
+                <div class="lyrics_latin">O es demasiado simple, o es demasiado dura.</div>
+            [8:48.389] 嗱|嗰|一款|呢|，
+                <div class="lyrics_latin">De ese tipo,</div>
+            [8:49.414] 我|上次|食完|足足|胃痛|咗|兩個|鐘|啊|。
+                <div class="lyrics_latin">Me dolió el estómago durante dos horas después de comerlo.</div>
+            [8:52.178] 嘩～|，|食|麥皮|都會|胃痛|㗎|。
+                <div class="lyrics_latin"> Vaya, (no lo sabía) comer avena puede causar dolor de estómago</div>
+            [8:55.183] 揀|款|好嘅|麥皮|就|冇問題|㗎|啦|，
+                <div class="lyrics_latin">No es un problema si eliges una buena avena.</div>
+            [8:58.633] 好嘅|麥皮|營養價值|高|。
+                <div class="lyrics_latin">Una buena avena es nutritiva</div>
+            [9:01.445] 我|以|前|啊|，|成日|都|食|白粥|做|早餐|，
+                <div class="lyrics_latin">Solía desayunar arroz congee.</div>
+            [9:04.355] 食到|厭|咗|咪|轉|食|麥皮|囉|，
+                <div class="lyrics_latin">Me aburrí y me pasé a la avena.</div>
+            [9:06.709] 最近|啊|健康|咗|㖭|啊|。|價錢|又|平喎|。
+                <div class="lyrics_latin">E incluso me he vuelto más sano. Y además es barata.</div>
+            [9:10.163] 哎唷|，|睇嚟|伯伯|你|係|麥皮|專家|喎|。
+                <div class="lyrics_latin">Oh wow, parece que tío eres el experto en avena (quién lo iba a decir)</div>
+            [9:15.205] 噉|我哋|就|買|你|推薦|呢款|啦|。
+                <div class="lyrics_latin">Así que vamos a comprar el que usted recomienda</div>
+            [9:17.517] 真係|唔該晒|你|喇| |伯伯|。
+                <div class="lyrics_latin">Muchas gracias, tío.</div>
+            [9:20.606] 哦|（|風騷|）|呵呵|呵| |唔使客氣|，
+                <div class="lyrics_latin">Oh hoho (coqueto) de nada.</div>
+            [9:23.880] 可以|幫到|人|係|我|最大|嘅|快樂|。
+                <div class="lyrics_latin">Ser útil es mi mayor placer</div>
+            [9:26.879] 啊| |噉|你哋|慢慢睇|喇|，
+                <div class="lyrics_latin">Ah, sigues eligiendo a tu tiempo</div>
+            [9:28.905] 我|仲要|去|嗰邊|買|沙田柚|啊|。
+                <div class="lyrics_latin">Tengo que ir a comprar pomelo</div>
+            [9:31.011] 我|之後|啊|，|趕|返屋企|煮餸|啊|，
+                <div class="lyrics_latin">Y luego volver corriendo a casa a cocinar,</div>
+            [9:33.281] 哈哈|，|哎|今日|真係|好忙|唧～|！
+                <div class="lyrics_latin">Jaja, ¡hoy es un día tan ocupado!</div>
+            [9:41.926] 頭先|個|阿伯|又|幾好|人|喎|。
+                <div class="lyrics_latin">El tío es tan amable</div>
+            [9:45.860] 係|囉|係|囉|，
+                <div class="lyrics_latin">Sí, sí.</div>
+            [9:47.004] 我|見|佢|衣着|打扮|咁|噏耷|，
+                <div class="lyrics_latin">Vi su atuendo está todo desgastado</div>
+            [9:49.995] 衫褲鞋襪|全部|都|殘殘|舊舊|、|破|破爛|爛|噉|，
+                <div class="lyrics_latin">camisa pantalones zapatos calcetines todos son viejos y andrajosos</div>
+            [9:54.038] 佢|行過|嚟|之前|啊|，
+                <div class="lyrics_latin">Antes de venir aquí</div>
+            [9:55.846] 仲|以為|佢|係|個|猥瑣|佬|㖭|啊|。
+                <div class="lyrics_latin">Incluso pensé que era un asqueroso</div>
+            [9:58.636] 叫咗|你|唔好|以貌取人|㗎|啦|。
+                <div class="lyrics_latin">Te dije que no juzgues a la gente por su apariencia.</div>
+            [10:01.738] 不過呢|都|唔可以|用|三言兩語
+                <div class="lyrics_latin">Y tampoco puedes fiarte de una conversación corta</div>
+            [10:04.911] 去|判斷|一|個人|啊|，
+                <div class="lyrics_latin">para juzgar a una persona</div>
+            [10:06.131] 你|點知|啊|，|頭先|阿伯|啊|，
+                <div class="lyrics_latin">Cómo lo sabías, el tío con el que acabamos de hablar,</div>
+            [10:09.435] 私底下|係|一個|點樣|嘅|人|呢|吓|？
+                <div class="lyrics_latin">¿Quién es realmente en privado?</div>
+            [10:12.249] 哎|吖|可能|佢|真係|一個|怪叔叔|呢|.|.|.
+                <div class="lyrics_latin">¿Aiya tal vez realmente es un viejo pervertido?</div>
+            [10:16.858] 你|成日|都|諗|埋|啲|衰嘢|嘅|。
+                <div class="lyrics_latin">Siempre estás pensando cosas traviesas</div>
+            [10:30.437] 王～～伯|幫|完|師奶|揀|完|麥皮|之後
+                <div class="lyrics_latin">Tío Wong, después de haber ayudado a las señoras de mediana edad con sus cereales,</div>
+            [10:33.016] 就|去咗|買|沙田柚|。
+                <div class="lyrics_latin">fue a comprar pomelos</div>
+            [10:34.887] 今日|沙田柚|大減價|，
+                <div class="lyrics_latin">Hoy se venden pomelos</div>
+            [10:37.135] 王～～伯|好開心|噉|買咗|兩個|。
+                <div class="lyrics_latin">Y el tío Wong estaba feliz y compró dos.</div>
+            [10:39.238] 忙|咗|一輪|之後|，
+                <div class="lyrics_latin">Después de todo el ajetreo,</div>
+            [10:40.631] 佢|終於|返到屋企|喇|。
+                <div class="lyrics_latin">finalmente llegó a casa.</div>
+            [10:43.810] 哎呀|，|忙|咗|成日|膊頭|都|攰|埋|，
+                <div class="lyrics_latin">Aiya, después de correr todo el día, me duele el hombro.</div>
+            [10:49.293] 一陣|搵老婆|幫我|揼～～～～～～|吓|骨|先|！
+                <div class="lyrics_latin">¡Más tarde le diré a Honey que me dé un masaje!</div>
+            [10:52.256] （|大聲|）|老婆|，|我|返嚟|啊|！
+                <div class="lyrics_latin">¡Cariño! ¡He vuelto!</div>
+            [10:55.115] 又|會|落咗|街|都有|嘅～|。
+                <div class="lyrics_latin">¿Qué posibilidades hay de que haya salido a pasear</div>
+            [10:57.065] 唔緊要
+                <div class="lyrics_latin">No importa,</div>
+            [10:58.502] 洗定|啲|菜|、|醃～|埋|啲|排骨|先|！ 
+                <div class="lyrics_latin">¡Déjame lavar las verduras y marinar las costillas!</div>
+            [11:01.155] 咦|？|呢度|得|一|斤|菜|咋喎|！
+                <div class="lyrics_latin">¿Eh? ¡Sólo hay una gatita de verduras!</div>
+            [11:04.174] 菜檔|個|阿姐|又|呃我|秤|？| 
+                <div class="lyrics_latin">¿El tendero me estaba engañando otra vez?</div>
+            [11:06.981] 街市|啲|人|真係|豈有此理|，
+                <div class="lyrics_latin">La gente en el mercado húmedo está más allá de la razón</div>
+            [11:09.161] 連|阿伯|…|…| |呸！
+                <div class="lyrics_latin">Incluso un anciano ... eh eh</div>
+            [11:11.209] 連|哥哥仔|我|都要|呃|！
+                <div class="lyrics_latin">¡Incluso engañando a un joven como yo!</div>
+            [11:15.916] 嘩|！|唉吔|因乜解究
+                <div class="lyrics_latin">Vaya.  Por qué oh por qué</div>
+            [11:17.356] 啲|排骨|又|變晒|做|石頭|㗎|？
+                <div class="lyrics_latin">¿las costillas se han convertido en piedras?</div>
+            [11:19.483] 你|噉|做生意|唔好|去搶|？
+                <div class="lyrics_latin">¡Llevar un negocio así es como un robo!</div>
+            [11:21.372] 吖|聽日|真係|要去|鬧下|啲|豬肉佬|先得|嘅|！
+                <div class="lyrics_latin">Mañana voy a regañar a los carniceros de abajo</div>
+            [11:24.585] 吖|係喎|，|拎咗個|沙田柚|俾|陳太～|先|，
+                <div class="lyrics_latin">Oh sí, déjame llevarle los pomelos a la Sra. Chan</div>
+            [11:27.601] 一陣間|又|唔記得|啊|！
+                <div class="lyrics_latin">¡Antes de que se me olvide!</div>
+            [11:32.995] 陳太～|陳太～|啊|，|買咗|個|沙田柚|俾你|啊|！
+                <div class="lyrics_latin">¡Sra. Chan, Sra. Chan, le he comprado un pomelo!</div>
+            [11:38.316] 陳太～|！|陳太～|？
+                <div class="lyrics_latin">Sra. Chan ¿Sra. Chan?</div>
+            [11:40.205] 冇理由|咁耐|都|仲未|起身|㗎喎|！
+                <div class="lyrics_latin">¡No hay razón para que aún no se haya levantado!</div>
+            [11:42.746] 啊|死|喇|！|唔係|出咗事|呀|！
+                <div class="lyrics_latin">Oh cielos.  No es un accidente, ¿no?</div>
+            [11:46.167] 唉吔|唔得|，|唔得|，
+                <div class="lyrics_latin">oh no, oh no</div>
+            [11:47.290] 我|一定|要|報警|先|！
+                <div class="lyrics_latin">¡Tengo que llamar a la policía!</div>
+            [11:48.509] 喂|陳太～|陳太～|你|頂住|啊|！
+                <div class="lyrics_latin">¡Sra. Chan, aguante!</div>
+            [11:56.325] 999| |報案|中心|。
+                <div class="lyrics_latin">Centro de Denuncias 999</div>
+            [11:58.392] 你好|先生|，|有咩|可以|幫到～你|？
+                <div class="lyrics_latin">Hola señor, ¿en qué puedo ayudarle?</div>
+            [12:00.670] 隔離屋|陳太～|啊|，
+                <div class="lyrics_latin">La Sra. Chan es mi vecina,</div>
+            [12:02.911] 佢|拍|極|門|都|冇人|應|啊|，
+                <div class="lyrics_latin">Llamo a su puerta y nadie responde.</div>
+            [12:04.673] 我|好驚|佢|有事|啊|。
+                <div class="lyrics_latin">Me preocupa que haya tenido un accidente</div>
+            [12:06.289] 唔該|你|吖|，|你|快啲|搵人|去|睇吓|佢|啦|。
+                <div class="lyrics_latin">Por favor, debería enviar a alguien a verla.</div>
+            [12:08.913] 你|個|鄰居|由|幾時|開始|冇|應門|啊|？
+                <div class="lyrics_latin">¿Desde cuándo tu vecino no contesta a la puerta?</div>
+            [12:11.716] 今朝|囉|，|今朝|到|而家|喇|。
+                <div class="lyrics_latin">Esta mañana, es desde esta mañana hasta ahora</div>
+            [12:14.363] 我|頭先|出去|買餸|幫佢|買個|沙田柚|，
+                <div class="lyrics_latin">Fui a comprarle un pomelo mientras hacía la compra.</div>
+            [12:17.202] 諗住|攞|俾佢|𠺢嘛|，
+                <div class="lyrics_latin">Y pensé en llevarle uno</div>
+            [12:18.723] 再|同佢|呻|下～～～
+                <div class="lyrics_latin">y quejarme con ella</div>
+            [12:19.594] 今日|俾|嗰啲|街市|俾|嗰啲|人|呃|，
+                <div class="lyrics_latin">cómo hoy las tiendas del mercado húmedo me estaban engañando,</div>
+            [12:21.433] 點知|而家|叫極|都|反應|哦|。
+                <div class="lyrics_latin">Pero no obtengo respuesta de ella por más que lo intento.</div>
+            [12:23.886] 好|，|我哋|即刻|派|同事|去|跟進|。
+                <div class="lyrics_latin">Roger, enviaremos a alguien para que haga un seguimiento.</div>
+            [12:26.085] 伯伯|你|頭先|話|你|喺|街市|俾人|呃|？
+                <div class="lyrics_latin">¿Tío dijiste que te engañaron en el mercado húmedo?</div>
+            [12:28.277] 可唔可以|講下|咩事|啊|？
+                <div class="lyrics_latin">¿Puedes decir algo más?</div>
+            [12:29.570] 唉吔|，|講起| |嬲|啊|。
+                <div class="lyrics_latin">Aiya, me enfado hablando de esto.</div>
+            [12:32.091] 今日|係|我|老婆|生日|𠺢嘛|，
+                <div class="lyrics_latin">Así que hoy es el cumpleaños de mi esposa</div>
+            [12:33.888] 阿囡|今晚|又|返嚟|食飯|，
+                <div class="lyrics_latin">y mi hija viene a cenar esta noche</div>
+            [12:35.567] 諗住|去|街市|買|啲|靚|嘅|排骨
+                <div class="lyrics_latin">así que pensé en ir al mercado húmedo para conseguir unas buenas costillas</div>
+            [12:38.263] 整|俾|佢哋|食|啦|，
+                <div class="lyrics_latin">para cocinar para ellos,</div>
+            [12:39.505] 點知|用|幾十|蚊|買咗|堆|石頭|返嚟|。
+                <div class="lyrics_latin">Pero gasté docenas de dólares, quién lo diría, en algunas piedras</div>
+            [12:42.815] 仲有|呀|，|賣菜|嗰個|阿姐|仲|呃我|秤|㖭|啊|，
+                <div class="lyrics_latin">Y eso no es todo, la mujer que vendía verduras no me dio lo que pagué</div>
+            [12:46.534] 買|兩|斤|淨係|比|一|斤|喎|。
+                <div class="lyrics_latin">Me dio una gatita cuando compré dos</div>
+            [12:48.068] 我哋|幫|你|調查|一下|。
+                <div class="lyrics_latin">Investigaremos por usted.</div>
+            [12:49.616] 伯伯|你|鄰居|地址|係|？
+                <div class="lyrics_latin">Tío, tu dirección es...</div>
+            [12:52.236] 哦| |誒| |深水埗| |誒|…|…| 
+                <div class="lyrics_latin">ah, eh, Shum Shui Po, eh...</div>
+            [13:01.753] 你好|，|差人|查案|啊|。
+                <div class="lyrics_latin">Hola, investigación policial.</div>
+            [13:04.214] 吓| |Madam|發生|乜事|啊|？
+                <div class="lyrics_latin">Eh señora, ¿qué ha pasado?</div>
+            [13:07.028] 我|係呢度|嘅|看更|，|我|姓|宋|嘅|。
+                <div class="lyrics_latin">Soy el guardia de seguridad aquí, mi apellido es Sung.</div>
+            [13:11.527] 警察|姐姐|你|嚟咗|就|好喇|！
+                <div class="lyrics_latin">¡Gracias a Dios que está aquí, Hermana Policía!</div>
+            [13:13.843] 唉吔|，|我|好擔心|陳太～|啊|！
+                <div class="lyrics_latin">¡Aiya, estoy tan preocupada por la Sra. Chan!</div>
+            [13:16.443] 我|頭先|去|拍門|都|仲係|冇人|應|啊|！
+                <div class="lyrics_latin">Fui a llamar a la puerta y todavía nadie responde.</div>
+            [13:18.562] 所以| |啱啱|諗住|落嚟|睇下～～～|你|到咗|未|啫|！
+                <div class="lyrics_latin">asi que pense en bajar a ver si ya estabas aqui</div>
+            [13:22.099] 你|就係|頭先|報案|嘅|伯伯|呀～～|？
+                <div class="lyrics_latin">¿Eres el tío que presentó el informe hace un tiempo?</div>
+            [13:24.427] 王～～伯|，|你|無啦\啦|做乜|報警|啊|？
+                <div class="lyrics_latin">Tío Wong, ¿por qué llamaste a la policía sin motivo?</div>
+            [13:27.533] 宋生|啊|，|伯伯|懷疑|呢度|嘅|住戶
+                <div class="lyrics_latin">Ah Sr. Sung, el tío sospecha que uno de los habitantes de aquí,</div>
+            [13:30.924] 陳太～|暈低|咗|喺|屋|入面|，
+                <div class="lyrics_latin">la Sra. Chan, se desmayó en la casa.</div>
+            [13:32.585] 所以|報警|求助|。
+                <div class="lyrics_latin">por lo que llamó a la policía en busca de ayuda.</div>
+            [13:34.096] 唉|，|你|話|陳太～|啊|，
+                <div class="lyrics_latin">Oh, dijo Sra. Chan,</div>
+            [13:36.702] 佢|舊年|就|已經|過咗身|㗎|喇|。
+                <div class="lyrics_latin">Ella falleció el año pasado.</div>
+            [13:39.456] 吓|，|過咗身|？
+                <div class="lyrics_latin">¿Qué falleció? ¿Falleció?</div>
+            [13:41.086] 宋生|，|你|亂噏|啲|乜嘢|啊|？
+                <div class="lyrics_latin">Sr. Sung, ¿de qué tonterías está hablando?</div>
+            [13:43.149] 陳太～|噚日|仲|叫我|幫佢|買|沙田柚|㗎喎|！
+                <div class="lyrics_latin">¡La Sra. Chan me dijo ayer que la ayudara a comprar pomelos!</div>
+            [13:46.375] 王～～伯|啊|，|都|成年|啦|，
+                <div class="lyrics_latin">Tío Wong, ha pasado un año,</div>
+            [13:49.238] 你|都|應該|接受|…
+                <div class="lyrics_latin">Deberías aceptar...</div>
+            [13:51.292] 陳太～|邊有|可能|過咗身|啊|！
+                <div class="lyrics_latin">¡Es imposible que la Sra. Chan haya fallecido!</div>
+            [13:53.907] 上|星期|啊|，|我|仲|幫緊|陳太～|影咗|張相|！
+                <div class="lyrics_latin">La semana pasada, tomé una foto para la señora Chan</div>
+            [13:57.265] 就係|用|我|而家|呢部|智能手機|！
+                <div class="lyrics_latin">¡Usando mi teléfono inteligente aquí!</div>
+            [13:59.731] 嗱|，|我|俾|張相|你|睇下～～～|！
+                <div class="lyrics_latin">Aquí, déjame buscar la foto para mostrarle</div>
+            [14:01.516] 唉|，|王～～伯|啊|…|…
+                <div class="lyrics_latin">Tío Wong...</div>
+            [14:04.210] 王～～伯|呀|…|…|你|話|呢部|係|智能手機|？| 
+                <div class="lyrics_latin">Tío Wong... ¿dijiste que esto es un teléfono inteligente?</div>
+            [14:07.973] 乜|呢部|…|…|唔係|Nokia| |3310|咩|？
+                <div class="lyrics_latin">¿No es este... no es este el Nokia 3310?</div>
+            [14:11.309] 咩呀|咩|3310|啊|？
+                <div class="lyrics_latin">¿Qué 3310?</div>
+            [14:13.554] 呢部機|係|我|阿囡|上|星期
+                <div class="lyrics_latin">(Este teléfono,) La semana pasada mi hija</div>
+            [14:15.570] 送|俾|我|嘅|蘋果|智能手機|喎|！
+                <div class="lyrics_latin">me regaló este teléfono inteligente iPhone.</div>
+            [14:18.863] Err|…|即係噉|嘅|，
+                <div class="lyrics_latin">Err... así que, veamos...</div>
+            [14:21.878] 阿|王～～伯|你|頻撲|咗|成日|都|攰|㗎|啦|，
+                <div class="lyrics_latin">Tío Wong has estado corriendo todo el día, debes estar cansado,</div>
+            [14:26.078] 不如|你|返去|休息下|先啦|。
+                <div class="lyrics_latin">¿Por qué no vas a descansar?</div>
+            [14:28.387] 但係|我|真係|好擔心|陳太～|喎|。
+                <div class="lyrics_latin">Pero estoy muy preocupado por la señora Chan</div>
+            [14:31.100] 嗱|王～～伯|唔使|擔心|，
+                <div class="lyrics_latin">No te preocupes tío Wong,</div>
+            [14:32.612] 我哋|有|陳太～|嘅|消息|呢|再會|再|通知|你|，
+                <div class="lyrics_latin">Cuando tengamos noticias de la Sra. Chan, nos pondremos en contacto con usted.</div>
+            [14:35.289] 王～～伯|你|返屋企|先啦|。
+                <div class="lyrics_latin">Tío Wong primero puede regresar a su apartamento.</div>
+            [14:36.576] 好啦|。
+                <div class="lyrics_latin">Ok</div>
+            [14:43.927] 宋生|呀|，|究竟|陳太～|同|王～～伯
+                <div class="lyrics_latin">Sr. Sung, al final, la Sra. Chan y el tío Wong</div>
+            [14:46.383] 發生左|咩事|呀|？
+                <div class="lyrics_latin">¿Qué pasó allí?</div>
+            [14:47.633] 點解|同|報案|個陣|講嘅|咁|唔同|嘅～|？
+                <div class="lyrics_latin">¿Por qué es tan diferente de la presentación del informe policial?</div>
+            [14:50.219] 實際|情況|同你|喺|王～～伯|嗰度|聽返嚟
+                <div class="lyrics_latin">Los hechos, y lo que escuchaste del tío Wong,</div>
+            [14:54.204] |係|兩回事|嚟|㗎|。
+                <div class="lyrics_latin">son dos asuntos diferentes.</div>
+            [14:55.844] Madam|，|你|聽|我|慢慢|講|吖|。
+                <div class="lyrics_latin">Señora, déjeme explicárselo con detalle.</div>
+            [14:58.527] 嗯|。
+                <div class="lyrics_latin">(afirmativo)</div>
+            [15:01.160] 陳太～|佢|呢|舊年|真係|過咗身|㗎|喇|。
+                <div class="lyrics_latin">La Sra. Chan realmente falleció el año pasado.</div>
+            [15:04.659] 佢|同|王～～伯|感情|好好|，
+                <div class="lyrics_latin">Estaba muy unida al tío Wong,</div>
+            [15:06.555] 以|前|成日|都|一齊|去|買餸|嘅～|。
+                <div class="lyrics_latin">y solían hacer la compra juntos.</div>
+            [15:09.289] 畢竟|兩個|都係|獨居|長者|，
+                <div class="lyrics_latin">Después de todo, ambos son ancianos que viven solos,</div>
+            [15:11.699] 可以|互相|取暖|吖嘛|。
+                <div class="lyrics_latin">y pueden disfrutar de la compañía del otro.</div>
+            [15:13.628] 乜嘢話|，|王～～伯|都係|獨居|長者|？
+                <div class="lyrics_latin">¿Qué? ¿El tío Wong es un anciano que vive solo?</div>
+            [15:16.055] 但係|根據|報案|紀錄|，
+                <div class="lyrics_latin">Pero de acuerdo con el informe de presentación,</div>
+            [15:17.740] 佢|話係|同|老婆|一齊住|㗎喎|！
+                <div class="lyrics_latin">¡dijo que vivía con su mujer!</div>
+            [15:19.700] 唉| |Madam|。|佢|早年|就|喪～|妻|，
+                <div class="lyrics_latin">Oh, señora.  Perdió a su esposa hace mucho tiempo</div>
+            [15:22.985] 本身|同|個|囡|仲有|個|女婿|一齊住|嘅|，
+                <div class="lyrics_latin">Vivía con su hija y su yerno.</div>
+            [15:26.311] 幾年|前|話|怕|阻住|佢哋|二人世界|，
+                <div class="lyrics_latin">Hace unos años, dijo que no quería intervenir en su vida de pareja,</div>
+            [15:29.078] 所以|先|搬|出嚟|住|喎～～～～|。
+                <div class="lyrics_latin">así que se mudó aquí.</div>
+            [15:30.969] 但係|可惜|吖|，|我|見住|佢哋|咁多年|，
+                <div class="lyrics_latin">Pero es una pena, le conocí durante muchos años,</div>
+            [15:33.613] 佢個|女|一次|都冇|搵過|佢哋|，
+                <div class="lyrics_latin">Su hija nunca había venido a buscarlo</div>
+            [15:35.785] 斷估|都係|俾人|趕|出嚟|㗎|喇|。
+                <div class="lyrics_latin">Supongo que probablemente lo echaron.</div>
+            [15:38.335] 即係話|佢|話要|幫|老婆|煮|生日|飯
+                <div class="lyrics_latin">así que cuando dijo que estaba cocinando una fiesta de cumpleaños para su esposa</div>
+            [15:41.158] 都係|幻想|出嚟|嘅～|？
+                <div class="lyrics_latin">¿también fue delirante?</div>
+            [15:42.632] 係|啊|。
+                <div class="lyrics_latin">Sí.</div>
+            [15:43.420] 噉|今日|佢|話|陳太～|唔|應門|即係|虛驚一場|囉|…|…
+                <div class="lyrics_latin">Así que hoy cuando dijo que la Sra. Chan no respondió a la puerta, fue una falsa alarma...</div>
+            [15:47.012] 陳太～|一早|就|唔喺度|喇|，
+                <div class="lyrics_latin">La Sra. Chan se fue hace mucho tiempo,</div>
+            [15:49.427] 但|我諗|王～～伯|仲|成\日|諗住
+                <div class="lyrics_latin">Pero creo que el tío Wong todavía está pensando en</div>
+            [15:51.744] 以|前|同|陳太～|一齊|買餸|嘅|日子|啩|。
+                <div class="lyrics_latin">aquellos días en los que solía ir de compras con la Sra. Chan.</div>
+            [15:54.298] 噉|呀|，|等我|去|同|王～～伯|講返～|陳太～|嘅|情況|啦|。
+                <div class="lyrics_latin">Si este es el caso, entonces voy a ir a tío Wong y explicarle la situación con la señora Chan.</div>
+            [15:57.516] 哎| |madam|我|講咗|好|多次|㗎|喇|，
+                <div class="lyrics_latin">(Señora, lo he dicho muchas veces,</div>
+            [16:00.955] 佢|邊度|會|聽|吖|？|我|同佢|講|，
+                <div class="lyrics_latin">¿Pero me escucharía? Sólo le digo</div>
+            [16:03.651] 陳太～|出咗|遠|門|去咗|旅行|噉就得|㗎|喇|。
+                <div class="lyrics_latin">que la Sra. Chan se fue de viaje a algún lugar lejano, y con eso basta.</div>
+            [16:07.392] 我哋|咁樣|呃|佢|真係|好咩|？
+                <div class="lyrics_latin">¿Es bueno que le mintamos?</div>
+            [16:10.378] 呃|佢|嘅|，|你|話|嘞～～～|madam
+                <div class="lyrics_latin">La que le miente, ¿qué le parece, señora?</div>
+            [16:13.521] 究竟||係|佢|自己|定係|我哋|呢|？
+                <div class="lyrics_latin">¿Es en última instancia él mismo, o somos nosotros?</div>
+            [16:16.402] 啊|，|王～～伯|頭先|報案|嗰陣|，
+                <div class="lyrics_latin">Oh, cuando el tío Wong presentó el informe</div>
+            [16:19.146] 仲|話|喺|街市|俾|豬肉檔|同|菜檔|呃|喎|。
+                <div class="lyrics_latin">Dijo que el carnicero y la tienda de verduras en el mercado húmedo le estaba engañando</div>
+            [16:21.994] 你|知|唔知|係|咩事|啊|？
+                <div class="lyrics_latin">¿Sabes lo que pasó?</div>
+            [16:23.145] 哦|，|佢|係咪|話俾|菜檔|呃秤|，
+                <div class="lyrics_latin">Ah, dijo que en la verdulería no le dieron todo lo que compró,</div>
+            [16:26.569] 豬肉佬|比|啲|石頭|佢|啊|！
+                <div class="lyrics_latin">y que el carnicero le dio piedras?</div>
+            [16:29.013] 吖| |係|啊|係|啊|！
+                <div class="lyrics_latin">¡Sí, sí!</div>
+            [16:30.172] 唉|，|人哋|邊有|呃|佢|吖|。
+                <div class="lyrics_latin">(La gente no le engañó.</div>
+            [16:33.220] 王～～伯|退咗休|，
+                <div class="lyrics_latin">Después de que el tío Wong se retiró,</div>
+            [16:34.598] 靠|住|啲|綜～援|過日子|。
+                <div class="lyrics_latin">Vivía de la seguridad social</div>
+            [16:36.497] 淨係|俾|呢～～～～～～～～～～度|嘅|租金|都|冇咗|成|大半|嘞～～～|，
+                <div class="lyrics_latin">Más de la mitad se fue en el alquiler aquí,</div>
+            [16:39.850] 邊有|錢|成日|同人|買|豬肉|食|吖|。
+                <div class="lyrics_latin">¿De dónde va a sacar dinero para comprar carne de cerdo?</div>
+            [16:43.391] 唔知|係|有心|定|無意|吖|，
+                <div class="lyrics_latin">Quién sabe si fue intencionado,</div>
+            [16:45.902] 王～～伯|成日|都|攞啲|大富翁|玩具|錢
+                <div class="lyrics_latin">Tío Wong va todo el tiempo con dinero del monopolio,</div>
+            [16:48.471] 出去|街市|買餸|，
+                <div class="lyrics_latin">al mercado de comestibles,</div>
+            [16:50.087] 起初|啲|舖頭|見|佢|都|好可憐|，
+                <div class="lyrics_latin">Al principio las tiendas se apiadaron de él,</div>
+            [16:52.666] 噉|都|照樣|俾|啲|肉|佢|嘅～|，
+                <div class="lyrics_latin">como tal, aún le daban algo de carne,</div>
+            [16:55.098] 但係|人哋|都要|做生意|得|𠺢嘛|，
+                <div class="lyrics_latin">pero tienen un negocio que atender,</div>
+            [16:57.502] 後來|豬肉佬|就|開始
+                <div class="lyrics_latin">así que el carnicero empezó</div>
+            [16:59.150] 將|碎石|當|豬肉|比|王～～伯|。
+                <div class="lyrics_latin">pasando escombros como carne al tío Wong.</div>
+            [17:01.516] 至於|菜檔|，|就|好啲|嘅～|。
+                <div class="lyrics_latin">La verdulería fue más amable.</div>
+            [17:03.708] 收咗|啲|玩具|錢|都|肯俾|啲|菜|佢|，
+                <div class="lyrics_latin">Cogieron el dinero del juguete y le dieron verduras,</div>
+            [17:06.756] 已經|好好|㗎|喇|。
+                <div class="lyrics_latin">lo cual es muy amable de su parte.</div>
+            [17:08.469] 王～～伯|通常|同我|呻|完|兩|句|之後
+                <div class="lyrics_latin">El tío Wong suele quejarse conmigo y luego...</div>
+            [17:10.749] 就|冇事|㗎|喇|，
+                <div class="lyrics_latin">todo está bien,</div>
+            [17:12.285] 第二朝|又|好似|唔記得咗|成件事|噉樣|又|再去|買餸|。
+                <div class="lyrics_latin">A la mañana siguiente es como si ya no recordara el incidente, y va a comprar comida de nuevo.</div>
+            [17:17.557] 竟然|係噉|…|…
+                <div class="lyrics_latin">Quién lo hubiera dicho...</div>
+            [17:19.671] 係|啊| |madam|。
+                <div class="lyrics_latin">Sí, señora.</div>
+            [17:20.767] 王～～伯|好似
+                <div class="lyrics_latin">Parece que el tío Wong</div>
+            [17:21.685] 完全|活|喺|自己|建構|嘅|世界|入面|噉|噃|…|…
+                <div class="lyrics_latin">está viviendo completamente en un mundo construido en su propia mente...</div>
+            [17:24.345] 未嘗|唔係|一|件|好事|吖|。
+                <div class="lyrics_latin">Tal vez sea algo bueno.</div>
+            [17:26.841] 起碼|佢|能夠|自得其樂|先啦|。
+                <div class="lyrics_latin">Al menos obtiene satisfacción en esto.</div>
+            [17:30.015] 哎|王～～伯|真係|一個|苦命|嘅|人|啊|。
+                <div class="lyrics_latin">El tío Wong vive sufriendo.</div>
+            [17:33.421] 哼哼|哼| |Madam 活着|有|邊個|唔|苦|㗎|？
+                <div class="lyrics_latin">Ja, ja. ¿Quién no vive en el sufrimiento?</div>
+            [17:57.722] 老婆|你|返嚟|喇|！
+                <div class="lyrics_latin">¡Cariño has vuelto!</div>
+            [17:59.594] 喂|喂|喂| |我|練|緊|粵曲|啊|，
+                <div class="lyrics_latin">Hey hey hey, estoy cantando ópera cantonesa,</div>
+            [18:02.278] 你|想|聽|邊|首|隨便～～|話我|聽|！
+                <div class="lyrics_latin">¡Dime qué canción quieres escuchar!</div>
+            [18:04.771] 流行曲|？|我|邊度識|唱啊|？
+                <div class="lyrics_latin">¿Música pop? ¿Cómo voy a saber cantar eso?</div>
+            [18:08.250] 王～～伯|噉樣|真係|好咩|？
+                <div class="lyrics_latin">¿Es bueno que el tío Wong viva así?</div>
+            [18:10.156] 佢|日日|都|係噉|過|㗎|啦|。
+                <div class="lyrics_latin">Vive así todos los días.</div>
+            [18:24.825] 王～～伯|今日|又|如常|出去|買餸|，
+                <div class="lyrics_latin">Hoy, el tío Wong está haciendo la compra como cualquier otro día,</div>
+            [18:27.429] 心情|一如既往|咁好|。
+                <div class="lyrics_latin">y está tan alegre como cualquier otro día.</div>
+            [18:29.498] 最近|佢|多咗|一樣|興趣|，
+                <div class="lyrics_latin">Últimamente tiene una nueva afición,</div>
+            [18:31.877] 就係|講道理|。
+                <div class="lyrics_latin">y es hacer proselitismo.</div>
+            [18:33.700] 睇下～～～|，|佢|又|喺度
+                <div class="lyrics_latin">Mira, él es una vez más</div>
+            [18:35.100] 同啲|三唔識七|嘅|後生仔|講道理|喇|。
+                <div class="lyrics_latin">haciendo proselitismo entre jóvenes que no conoce.</div>
+            [18:43.130] 嘿|！|睇|我|一個|華麗|轉身|！
+                <div class="lyrics_latin">¡Ja! ¡Contempla mi gracioso giro!</div>
+            [18:46.309] 喂|阿伯|，|你|噉樣|衝|𨋢門|好|危險|喎|。
+                <div class="lyrics_latin">Hey tío, correr en la puerta de un ascensor como este es muy peligroso</div>
+            [18:49.991] 冇事|嘅|，|我|身|輕～～|如|燕|，
+                <div class="lyrics_latin">No te preocupes, soy más ágil que una golondrina,</div>
+            [18:53.483] 後生|嘅|時候|我|仲|學|過|擒拿|㖭|㗎|。
+                <div class="lyrics_latin">Cuando era joven, incluso me entrenaron en combate cuerpo a cuerpo...</div>
+            [18:56.843] 哈哈|。
+                <div class="lyrics_latin">Err, ha-ha</div>
+            [18:57.850] 喂|，|你|份|report|寫|完未|啊|？| 
+                <div class="lyrics_latin">Oye, ¿has escrito tu informe?</div>
+            [19:00.005] 邊有|咁快|啊|。
+                <div class="lyrics_latin">No tan pronto.</div>
+            [19:01.986] 老細|琴日|要|我|寫| |report|，
+                <div class="lyrics_latin">El jefe me dijo que escribiera un informe ayer.</div>
+            [19:03.890] 今朝|又|叫我|整份|新|合約|俾|個|客|，
+                <div class="lyrics_latin">Y esta mañana me ha dicho que redacte un nuevo contrato para un cliente,</div>
+            [19:06.604] 話|今晚|要|簽|喎|！
+                <div class="lyrics_latin">¡diciendo que van a cerrar el trato esta noche!</div>
+            [19:08.630] 下晝|返去|唔係|仲要|開個|大會|咩|？
+                <div class="lyrics_latin">¿No había una reunión de manos a la obra esta tarde?</div>
+            [19:11.174] 份|合約|今晚～～|交|得切|㗎|喇|？
+                <div class="lyrics_latin">¿Puedes entregar el contrato esta noche?</div>
+            [19:13.228] 交唔到|都要|交|㗎|啦|，
+                <div class="lyrics_latin">Tengo que entregar</div>
+            [19:15.355] 最多|夜晚|唔食飯|趕|好|佢|囉|。
+                <div class="lyrics_latin">Cuando llegue el momento, me saltaré la cena para hacerlo.</div>
+            [19:18.905] 哎|你|話|我哋|呢|份工|，
+                <div class="lyrics_latin">Maldita sea, mira nuestros trabajos</div>
+            [19:21.189] 每日|忙|忙碌|碌|，
+                <div class="lyrics_latin">Agitado todo el día todos los días</div>
+            [19:23.050] 琴日|嘅|事|未|做完|，
+                <div class="lyrics_latin">El trabajo de ayer aún no ha terminado</div>
+            [19:24.668] 今日|嘅|事|又嚟|喇|。
+                <div class="lyrics_latin">El trabajo de hoy se acumula</div>
+            [19:26.244] 真係|唔想|每日||OT|到|三更半夜|先|返屋企|，
+                <div class="lyrics_latin">No quiero hacer horas extras hasta altas horas de la madrugada todos los días.</div>
+            [19:30.056] 噉|嘅|生活|仲有|咩|意義|吖|？
+                <div class="lyrics_latin">¿qué sentido tiene este tipo de vida?</div>
+            [19:32.842] 後生仔|此言差矣|啊|，
+                <div class="lyrics_latin">Y por eso estáis equivocados, chicos,</div>
+            [19:36.840] 搏盡|總|係有|回報|㗎|。
+                <div class="lyrics_latin">Todo esfuerzo siempre trae su recompensa.</div>
+            [19:39.546] 生命|嘅|意義|，
+                <div class="lyrics_latin">El sentido de la vida,</div>
+            [19:41.340] 就係|喺|奔波勞碌|之間|吖嘛|
+                <div class="lyrics_latin">se encuentra dentro del trabajo duro...</div>
+            [19:47.755] 嗱|後生仔|，
+                <div class="lyrics_latin">Niños,</div>
+            [19:48.990] 記得|好好|生活|、|享受|忙碌|。
+                <div class="lyrics_latin">Recuerda disfrutar de la vida y disfrutar del ajetreo</div>
+            [19:51.995] 加油|啦|！
+                <div class="lyrics_latin">Mantente fuerte</div>
+            [19:53.177] Er|…|…
+                <div class="lyrics_latin">Err...</div>
+            [19:56.526] 提點|後輩|梗係|我哋|呢啲|長輩|嘅|責任|啦|。
+                <div class="lyrics_latin">Mostrar el camino a la Juventud, es responsabilidad de nosotros los Ancianos.</div>
+            [20:09.636] 咦|，|警察|姐姐|乜|係|你|呀|。
+                <div class="lyrics_latin">Eh, es usted Sis Policía</div>
+            [20:12.324] 咁啱|呀|！
+                <div class="lyrics_latin">¡Qué coincidencia!</div>
+            [20:13.577] 哦 係呀|，|放工|咁啱|經過|呢頭|咋嘛|。
+                <div class="lyrics_latin">Sí, pasaba por aquí después del trabajo.</div>
+            [20:16.766] 哦| |喂|喂|喂| |我|買咗|啲|橙|啊|，
+                <div class="lyrics_latin">Ah. ¡Hey! Compré algunas naranjas,</div>
+            [20:19.880] 你|要|唔要|幾個|啊|？
+                <div class="lyrics_latin">¿quieres un poco?</div>
+            [20:23.579] 咦|王～～伯|，|你|喺|街市|買|㗎|？
+                <div class="lyrics_latin">Oh, tío Wong, ¿los conseguiste en el mercado?</div>
+            [20:26.053] 係|啊|，|今日|啲|橙|好|墜手|，
+                <div class="lyrics_latin">Sí.  Las naranjas se sienten muy pesadas hoy,</div>
+            [20:29.148] 應該|好|新鮮|喇|。
+                <div class="lyrics_latin">Debe ser muy fresco.</div>
+            [20:31.181] 哦| |好|.|.|.|.|.|.|啊|，
+                <div class="lyrics_latin">Oh... ok... err...</div>
+            [20:33.624] 多謝|王～～伯|吓|。
+                <div class="lyrics_latin">Gracias tío Wong.</div>
+            [20:35.578] 嗱| |後生女|你|要|注意飲食|，
+                <div class="lyrics_latin">Así que, como mujer joven, debes prestar atención a lo que comes y bebes,</div>
+            [20:38.882] 食|多啲|水果|。
+                <div class="lyrics_latin">y comer más frutas.</div>
+            [20:40.589] 你|睇|我|而家|神采飛揚|精力充沛|，
+                <div class="lyrics_latin">Mírame, tan vivo en mente y cuerpo,</div>
+            [20:43.927] 全靠|都係|後生|嘅|時候|注重|養生|之|道|。
+                <div class="lyrics_latin">Es porque me cuidé en mi juventud.</div>
+            [20:47.763] 哈哈|，|係|囉|係|囉|呵～～|。
+                <div class="lyrics_latin">Ja, ja, sí, sí.</div>
+            [20:50.837] 吖|王～～伯|啊|，
+                <div class="lyrics_latin">Oh, tío Wong,</div>
+            [20:52.108] 噉|你|今日|忙|唔忙啊|？
+                <div class="lyrics_latin">¿Estás ocupado hoy?</div>
+            [20:53.621] 有冇|同|朋友|去飲茶|啊|？
+                <div class="lyrics_latin">¿Vas a jam2 caa4 con tus amigos?</div>
+            [20:55.543] 忙|！|點會|唔|忙|唧～|！|嘿|，
+                <div class="lyrics_latin">¡Ocupado! ¡Cómo no voy a estar ocupado! Hmph,</div>
+            [20:58.329] 生活|啊|，|簡直|忙|到|得返～|空閒|咋|。
+                <div class="lyrics_latin">Vivo una vida tan ocupada, con sólo el tiempo suficiente para el ocio</div>
+            [21:06.984] 忙|到|…|…|得返～|空閒|？
+                <div class="lyrics_latin">tan ocupada, con sólo tiempo... ¿para holgazanear?</div>
+            [21:10.983] 警察|姐姐|我|返屋企|先|喇|，
+                <div class="lyrics_latin">Hermana policía, me voy a casa ahora</div>
+            [21:13.283] 趕住|返去|煮飯|啊|！
+                <div class="lyrics_latin">¡Tengo prisa por preparar la cena!</div>
+            [21:27.802] Madam|諗咗|好耐|呢句|說話|嘅|深意|，
+                <div class="lyrics_latin">La mujer policía se quedó pensativa sobre el significado de esta frase,</div>
+            [21:30.771] 諗諗下～～～|，
+                <div class="lyrics_latin">Y mientras ella pensaba</div>
+            [21:31.903] 王～～伯|已經|轉咗|入|一條|幽暗|嘅|巷|仔|。
+                <div class="lyrics_latin">el tío Wong ya se había metido en un callejón oscuro.</div>
+            [21:35.068] 腳步|聲～～|喺|窄巷|回|環|往|復|，
+                <div class="lyrics_latin">Sus pasos resonaban en el estrecho callejón.</div>
+            [21:37.647] 冇|俾|任|何|事情|收納|。
+                <div class="lyrics_latin">No absorbido por nada.</div>
+            [21:39.603] 王～～伯|嘅|身影|就|好似|一|葉|枯|咗|嘅|浮萍|，
+                <div class="lyrics_latin">La silueta del tío Wong parece una hoja de loto marchita.</div>
+            [21:43.162] 殘舊|嘅|恤衫|身影|最終|消失|係|黑影|之中|。
+                <div class="lyrics_latin">La silueta de la camisa hecha jirones acaba por desvanecerse en las sombras.</div>
+            [21:47.460] 「|生活|簡直|忙|到|得返～|空閒|」|，
+                <div class="lyrics_latin">"Una vida tan ocupada, con sólo el tiempo suficiente para holgazanear"</div>
+            [21:50.638] 或者|呢句|只係|王～～伯|一貫|嘅|瘋言瘋語|。
+                <div class="lyrics_latin">Tal vez esto es sólo otra charla loca del tío Wong.</div>
+            [22:01.474] 往事如煙|・|一個|老人|現在經|已|播放|完畢|。
+                <div class="lyrics_latin">A Past Dispersed: Tale of an Old Man se ha emitido por completo.</div>    
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
