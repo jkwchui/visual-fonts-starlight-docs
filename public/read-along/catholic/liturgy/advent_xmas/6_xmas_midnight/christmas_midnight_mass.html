@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="./rabbit-lyrics.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="./bulma-no-dark-mode.min.css">
+<link rel="stylesheet" href="./bulma-custom.css">
+<style>
+
+.rabbit-lyrics{
+    position:relative;
+    padding:1em 0;
+    height:12em;
+    overflow-x:hidden;
+    overflow-y:auto;
+    scroll-behavior:smooth;
+    background-color:#fff;
+    border:1px solid #ddd;
+}
+
+.rabbit-lyrics--center{text-align:center;}
+.rabbit-lyrics--left{text-align:left;}
+.rabbit-lyrics--right{text-align:right;}
+
+.rabbit-lyrics__line{
+    line-height:1.5em;
+    min-height:1.5em;
+    padding:0 1em;
+}
+
+.rabbit-lyrics__line--active{background-color:rgba(0,0,0,.05)}
+.rabbit-lyrics__inline--active{color:#00707F;}
+.rabbit-lyrics--mini{height:3em;overflow-y:hidden;}
+.rabbit-lyrics--mini .rabbit-lyrics__line{display:none;}
+.rabbit-lyrics--mini .rabbit-lyrics__line--active{
+    display:block;
+    background:transparent;
+}
+.rabbit-lyrics--full{
+    height:auto;
+    overflow-y:initial;
+}
+
+.lyrics_zh {
+    font-family: "VF-Canto-HKEdB-Large", "VF-Canto-Large", "VF Cantonese Large Jyutping", "VF Cantonese HKEdB Large", "VF-Canto-HKEdB", "VF Cantonese HKEdB", "VF-Canto", "VF Cantonese", "VF-Canto-Heritage", "VF Cantonese Heritage"; 
+    font-size: 5em;
+    line-height: 1em;
+}
+
+.lyrics_icon {
+    font-family: "VF-Canto-HKEdB-Large", "VF Cantonese HKEdB Large","VF-Canto", "VF Cantonese", "VF-Canto-HKEdB", "VF Cantonese HKEdB","VF-Canto-Heritage", "VF Cantonese Heritage"; 
+    font-size: 5em;
+    line-height: 1em;
+}
+
+.lyrics_latin {
+    font-family: "Dolly Pro", "Fira Sans Light",  sans-serif;
+    font-size: 0.5em !important;
+    line-height: 1.2em;
+}
+
+.lyrics_ja {
+    font-family: sans-serif;
+    font-size: 3em;
+    line-height: 150%;
+}
+
+.lyrics_zh-no-jyutping {
+    font-family: "VF Cantonese HKEdB NoJyutping", "VF-Canto-HKEdB-NoJyutping", "VF Cantonese NoJyutping", "VF-Canto-NoJyutping";
+    font-size: 5em;
+}
+
+.all_lyrics {
+    column-count: 1;
+    /* column-gap: 0%;
+    display: grid;
+    grid-template-columns: 15% 84%; */
+}
+
+.player_row {
+    column-count: 2;
+    column-gap: 2%;
+    display: grid;
+    grid-template-columns: 85% 12%;
+    margin: 2em;
+}
+
+.speaker {
+    overflow: hidden;
+}
+
+</style>
+<body>
+    <div class="content">
+        <section class="section">
+        <h1 class="title">耶穌聖誕節（子夜感恩祭）Christmas Midnight Mass</h1>
+
+        <p>The Vimeo video can be viewed without the Cantonese Font. The interactive version shows Jyutping <strong>provided that the Cantonese Font 2.8 is installed</strong>, and can be played back at slow speed for easy comprehension by clicking on the three dots next to volume control.</p>
+
+        <p>Vimeo 版本為純影片，毋須安裝粵語字體都可以聆聽、閲讀。互動版本需要已經安裝粵語字體 2.8 先至可以睇到粵拼。</p>
+
+        </section>
+        <div class="grid player_row">
+            <audio id="audio" controls style="width: 100%;">
+                <source src="Christmas_midnight_mass.ogg" type="audio/ogg">
+                <source src="Christmas_midnight_mass.mp3" type="audio/mpeg">
+            </audio>
+            <button id="toggleJyutping" class="button is-info">Jyutping 粵拼</button>
+        </div>
+    </div>
+
+    <div class="all_lyrics">
+        
+        <div id="lyricsContainer" class="rabbit-lyrics lyrics_zh chinese" data-media="#audio" data-alignment="left" data-view-mode="default">
+            [0:00.000] 耶穌|聖誕節|（|節日|）|
+            <div class="lyrics_latin">THE NATIVITY OF THE LORD</div>
+        [0:05.288] |十二月|廿五日|
+            <div class="lyrics_latin">25 December</div>
+        [0:08.653] |子夜|感恩祭|
+            <div class="lyrics_latin">At the Mass during the Night</div>
+        [0:12.561] |進堂詠|
+            <div class="lyrics_latin">ENTRANCE ANTIPHON </div>
+        [0:15.081] |上主|對我|說|：|
+            <div class="lyrics_latin">The Lord said to me: </div>
+        [0:18.011] |「|你|是|我|的|兒子|，|我|今日|生～～|了|你|。|」|（|詠|2|:|7|）|
+            <div class="lyrics_latin">You are my Son. It is I who have begotten you this day.(Ps 2:7) </div>
+        [0:25.912] |光榮頌|
+            <div class="lyrics_latin">The Gloria in Excelsis is said.</div>
+        [0:29.510] |集禱經|
+            <div class="lyrics_latin">COLLECT</div>
+        [0:32.778] 請～眾同禱
+            <div class="lyrics_latin">Let us pray (pause)</div>
+        [0:37.597] |天主|，|你|以|真光|的|照耀|，|
+            <div class="lyrics_latin">O God, who have made this most sacred night</div>
+        [0:41.544] |使|這|至聖|之|夜|光輝燦爛|。|
+            <div class="lyrics_latin">radiant with the splendor of the true light,</div>
+        [0:46.660] |請～|賜|我們|在|現世|認識|真光|的|奧蹟|，|
+            <div class="lyrics_latin">grant, we pray, that we, who have known the mysteries of his light on earth,</div>
+        [0:52.535] |將來|也|能|在|天上|，||分享|這|真光|的|喜樂|。|
+            <div class="lyrics_latin">may also delight in his gladness in heaven.</div>
+        [0:59.411] |他|和|你|及|聖神|，|
+            <div class="lyrics_latin">Who lives and reigns with you in the unity of the Holy Spirit, </div>
+        [1:02.219] |是|唯一|天主|，|永生～～|永|王|。|
+            <div class="lyrics_latin">one God, for ever and ever. </div>
+        [1:07.195] |亞孟|。|
+            <div class="lyrics_latin">R. Amen.</div>
+        [1:11.125] |聖道禮|
+            <div class="lyrics_latin"></div>
+        [1:14.293] |信經|
+            <div class="lyrics_latin">The Creed is said </div>
+        [1:16.712] |(|念|至|「|他|因|聖神|由|童貞|瑪利亞|取得|肉軀|，|而|成為|人|」|時|，|單膝|跪下|致敬|（|視乎|情況|需|要|，|可以|慣常|的|深鞠躬|代替|）|。|)|
+            <div class="lyrics_latin">All kneel at the words <emph>and by the Holy Spirit was incarnate.</emph></div>
+        [1:19.858] |獻禮經|
+            <div class="lyrics_latin">PRAYER OVER THE OFFERINGS</div>
+        [1:24.556] |上主|，|求|你|悅納|我們|
+            <div class="lyrics_latin">（sentence order) be pleasing to you, O Lord, we pray,</div>
+        [1:28.890] |在|這|慶節|所|獻上|的|禮品|，|
+            <div class="lyrics_latin">May the oblation of this day’s feast</div>
+        [1:33.165] |並|賜|我們|藉此|神聖|交換|，|
+            <div class="lyrics_latin">that through this most holy exchange</div>
+        [1:37.436] |更|能|肖|似|基督|；|
+            <div class="lyrics_latin">we may be found in the likeness of Christ,</div>
+        [1:40.734] |他|取|了|我們|的|人性|，|
+            <div class="lyrics_latin">in whom our nature</div>
+        [1:43.864] |為|使|我們|分享|他|的|天主|性|。|
+            <div class="lyrics_latin">is united to you.</div>
+        [1:49.434] |因|主|耶穌基督|之名～～|，|
+            <div class="lyrics_latin">Who lives and reigns </div>
+        [1:52.517] |求|你|俯聽～～|我們|的|祈禱|。|亞孟|。|
+            <div class="lyrics_latin">for ever and ever. R. Amen.</div>
+        [2:00.385] |聖誕|期|頌謝詞|（|一|）|、|（|二|）|或|（|三|）|
+            <div class="lyrics_latin">PREFACE</div>
+        [2:08.532] 聖誕期頌謝詞（一）
+            <div class="lyrics_latin">PREFACE I OF THE NATIVITY OF THE LORD</div>
+        [2:13.271] （基督是光）
+            <div class="lyrics_latin">(Christ the Light)</div>
+        [2:17.798] 主、聖父、全能永生的天主，
+            <div class="lyrics_latin">(4) Lord, holy Father, almighty and eternal God.</div>
+        [2:23.082] 我們時時處處感謝你，
+            <div class="lyrics_latin">(3) always and everywhere to give you thanks,</div>
+        [2:26.756] 實在是理所當然的，
+            <div class="lyrics_latin">(1) It is truly right and just, </div>
+        [2:30.122] 並有助我們獲得救恩。
+            <div class="lyrics_latin">(2) our duty and our salvation, </div>
+        [2:34.286] 藉著聖言降生成人的奧蹟，
+            <div class="lyrics_latin">For in the mystery of the Word made flesh</div>
+        [2:38.489] 你榮耀的新光，
+            <div class="lyrics_latin">a new light of your glory </div>
+        [2:40.971] 照亮了我們的心目，
+            <div class="lyrics_latin">has shone upon the eyes of our mind, </div>
+        [2:44.330] 使我們在他身上認識降生可見的天主，
+            <div class="lyrics_latin">so that, as we recognize in him God made visible,</div>
+        [2:51.052] 而嚮往不可見的美善。
+            <div class="lyrics_latin">we may be caught up through him in love of things invisible.</div>
+        [2:56.118] 為此，我們隨同天使、總領天使、
+            <div class="lyrics_latin">And so, with Angels and Archangels,</div>
+        [3:02.675] 上座者、宰制者和全體天軍，
+            <div class="lyrics_latin">with Thrones and Dominions, and with all the hosts and Powers of heaven,</div>
+        [3:09.614] 歌頌你的光榮，不停地歡呼：
+            <div class="lyrics_latin">we sing the hymn of your glory, as without end we acclaim:</div>
+        [3:17.209] 聖誕期頌謝詞（二）
+            <div class="lyrics_latin">PREFACE II OF THE NATIVITY OF THE LORD</div>
+        [3:22.496] （降生奧蹟重整萬有）
+            <div class="lyrics_latin">(The restoration of all things in the Incarnation)</div>
+        [3:28.067] 主、聖父、全能永生的天主，
+            <div class="lyrics_latin">(4) Lord, holy Father, almighty and eternal God.</div>
+        [3:33.440] 我們藉著主基督，
+            <div class="lyrics_latin">(5) through Christ our Lord.</div>
+        [3:36.177] 時時處處感謝你，
+            <div class="lyrics_latin">(3) always and everywhere to give you thanks,</div>
+        [3:39.559] 實在是理所當然的，
+            <div class="lyrics_latin">(1) It is truly right and just, </div>
+        [3:42.663] 並有助我們獲得救恩。
+            <div class="lyrics_latin">(2) our duty and our salvation, </div>
+        [3:47.036] 在這如此偉大的聖誕奧蹟中，
+            <div class="lyrics_latin">For on the feast of this awe-filled mystery,</div>
+        [3:51.383] 原是不可見的天主，
+            <div class="lyrics_latin">though invisible in his own divine nature,</div>
+        [3:54.476] 卻取了我們的形體，成了可見的。
+            <div class="lyrics_latin">he has appeared visibly in ours;</div>
+        [4:01.065] 他原生於萬有之先，
+            <div class="lyrics_latin">and begotten before all ages, </div>
+        [4:04.178] 如今竟生於萬有之中，
+            <div class="lyrics_latin">he has begun to exist in time;</div>
+        [4:08.422] 為復興受損的萬物，
+            <div class="lyrics_latin">so that, raising up in himself all that was cast down,</div>
+        [4:11.274] 重整宇宙，
+            <div class="lyrics_latin">he might restore unity to all creation</div>
+        [4:13.581] 並帶領迷失的人類，重返天鄉。
+            <div class="lyrics_latin">and call straying humanity back to the heavenly Kingdom.</div>
+        [4:19.784] 為此，我們隨同所有天使，
+            <div class="lyrics_latin">And so, with all the Angels, </div>
+        [4:24.883] 歡躍讚美你，不停地歡呼：
+            <div class="lyrics_latin">we praise you, as in joyful celebration we acclaim:</div>
+        [4:33.235] 聖誕期頌謝詞（三）
+            <div class="lyrics_latin">PREFACE III OF THE NATIVITY OF THE LORD </div>
+        [4:38.269] （聖言降生，是天主性與人性的神聖交換）
+            <div class="lyrics_latin">(The exchange in the Incarnation of the Word)</div>
+        [4:47.261] 主、聖父、全能永生的天主，
+            <div class="lyrics_latin">(4) Lord, holy Father, almighty and eternal God.</div>
+        [4:52.738] 我們藉著主基督，
+            <div class="lyrics_latin">(5) through Christ our Lord.</div>
+        [4:55.366] 時時處處感謝你，
+            <div class="lyrics_latin">(3) always and everywhere to give you thanks,</div>
+        [4:58.462] 實在是理所當然的，
+            <div class="lyrics_latin">(1) It is truly right and just, </div>
+        [5:01.553] 並有助我們獲得救恩。
+            <div class="lyrics_latin">(2) our duty and our salvation, </div>
+        [5:06.303] 今天，你顯示了奇妙的交換，
+            <div class="lyrics_latin">For through him the holy exchange that restores our life</div>
+        [5:11.373] 在基督內復興我們；
+            <div class="lyrics_latin">has shone forth today in splendor:</div>
+        [5:15.485] 他是你的聖言，
+            <div class="lyrics_latin">(2) — is assumed by your Word</div>
+        [5:18.106] 取了我們軟弱的人性，
+            <div class="lyrics_latin">(1) when our frailty —</div>
+        [5:21.786] 使我們可朽壞的人性，
+            <div class="lyrics_latin">not only does human mortality </div>
+        [5:25.656] 得到不朽的尊榮，
+            <div class="lyrics_latin">receive unending honor </div>
+        [5:29.488] 且因與聖言奇妙的結合，
+            <div class="lyrics_latin">but by this wondrous union we, too, </div>
+        [5:33.350] 得享永恆的生命。
+            <div class="lyrics_latin">are made eternal.</div>
+        [5:37.378] 為此，我們隨同所有天使，
+            <div class="lyrics_latin">And so, in company with the choirs of Angels,</div>
+        [5:42.088] 歡躍讚美你，不停地歡呼：
+            <div class="lyrics_latin">we praise you, and with joy we proclaim: </div>
+        [5:50.571] |領主詠|
+            <div class="lyrics_latin">COMMUNION ANTIPHON </div>
+        [5:54.251] |聖言|成了|血肉|，|寄居|在|我們|中間|；|
+            <div class="lyrics_latin">The Word became flesh, </div>
+        [6:00.951] |我們|見|了|他|的|光榮|。|（|若|1|:|14|）|
+            <div class="lyrics_latin">and we have seen his glory. (Jn 1:14) </div>
+        [] |（|領主|後|默禱|片刻|）|
+            <div class="lyrics_latin"></div>
+        [6:08.223] |領主|後|經|
+            <div class="lyrics_latin">PRAYER AFTER COMMUNION</div>
+        [6:11.804] |上主|、|我們|的|天主|，|
+            <div class="lyrics_latin">(2) O Lord our God,</div>
+        [6:15.114] |我們|歡欣|慶祝|救主|的|誕生～～|。|
+            <div class="lyrics_latin">(3) that we, who are gladdened by participation in the feast of our Redeemer’s Nativity,</div>
+        [6:20.121] |求|你|恩賜|我們|
+            <div class="lyrics_latin">(1) Grant us, we pray,</div>
+        [6:22.992] |善|度|相稱～～|的|基督徒|生～～活|，|
+            <div class="lyrics_latin">may through an honorable way of life</div>
+        [6:27.287] |來日|與|他|一|起|，|同|享|光榮|。|
+            <div class="lyrics_latin">become worthy of union with him.</div>
+        [6:32.279] |因|主|耶穌基督|之名～～|，|
+            <div class="lyrics_latin">Who lives and reigns </div>
+        [6:35.289] |求|你|俯聽～～|我們|的|祈禱|。|亞孟|。|
+            <div class="lyrics_latin">for ever and ever. R. Amen. </div>
+        [6:42.349] 隆重|祝福|
+            <div class="lyrics_latin">SOLEMN BLESSING</div>
+        [6:46.325] 主祭：願主與你們同在。
+            <div class="lyrics_latin"></div>
+        [6:50.543] 會眾：也與你的心靈同在。
+            <div class="lyrics_latin"></div>
+        [6:55.479] 執事/主祭：請～大家俯首接受天主的降福。
+            <div class="lyrics_latin"></div>
+        [] （主祭向會眾伸手）
+            <div class="lyrics_latin"></div>
+        [7:03.267] 主祭：各位弟兄姊妹：無限美善的天主，
+            <div class="lyrics_latin">May the God of infinite goodness,</div>
+        [7:09.375] 藉他聖子的降生，
+            <div class="lyrics_latin">who by the Incarnation of his Son </div>
+        [7:12.565] 驅逐世界的黑暗，
+            <div class="lyrics_latin">has driven darkness from the world </div>
+        [7:16.000] 並因他聖子的光榮誕辰，照亮這至聖之夜（日）。
+            <div class="lyrics_latin">and by that glorious Birth has illumined this most holy night,</div>
+        [7:24.245] 願天主除去你們身上的惡習和黑暗，
+            <div class="lyrics_latin">drive far from you the darkness of vice</div>
+        [7:31.085] 並以德行～～～～～之光，照亮你們的心靈。
+            <div class="lyrics_latin">and illumine your hearts with the light of virtue.</div>
+        [7:38.121] 會眾：亞孟。
+            <div class="lyrics_latin">R. Amen.</div>
+        [7:41.786] 主祭：天主藉天使，
+            <div class="lyrics_latin">(3) by the Angel, </div>
+        [7:44.286] 給牧羊人宣告救主誕生的偉大喜訊；
+            <div class="lyrics_latin">(2) be announced to shepherds (1) who willed that the great joy of his Son’s saving Birth</div>
+        [7:50.656] 願天主以喜樂充滿你們的心靈，
+            <div class="lyrics_latin">fill your minds with the gladness he gives</div>
+        [7:56.310] 使你們成為福音的傳報者。
+            <div class="lyrics_latin">and make you heralds of his Gospel.</div>
+        [8:02.603] 會眾：亞孟。
+            <div class="lyrics_latin">R. Amen.</div>
+        [8:04.952] 主祭：聖言降生成人，貫通上天下地；
+            <div class="lyrics_latin">And may God, who by the Incarnation brought together the earthly and heavenly realm,</div>
+        [8:11.374] 願天主恩賜你們平～安和善志，
+            <div class="lyrics_latin">fill you with the gift of his peace and favor</div>
+        [8:16.713] 使你們有分於天上的教會。
+            <div class="lyrics_latin">and make you sharers with the Church in heaven.</div>
+        [8:22.969] 會眾：亞孟。
+            <div class="lyrics_latin">R. Amen.</div>
+        [8:26.211] 主祭：願全能天主，聖父、聖子、聖神降福你們。
+            <div class="lyrics_latin">And may the blessing of almighty God, the Father, and the Son, and the Holy Spirit, come down on you and remain with you for ever.</div>
+        [8:38.644] |讀經|
+            <div class="lyrics_latin">READINGS</div>
+        [8:40.439] |讀經|一|
+            <div class="lyrics_latin">FIRST READING </div>
+        [8:42.623] |（|有|一個|嬰孩|為|我們|誕生～～|了|。|）|
+            <div class="lyrics_latin">(A son is given us.) </div>
+        [8:48.145] |恭讀|依撒意亞|先知|書|　|9|:|1|-|6|
+            <div class="lyrics_latin">A reading from the Book of the Prophet Isaiah (9:1-6) </div>
+        [8:53.753] |在|黑暗|中|行～～～～走|的|百姓|，|
+            <div class="lyrics_latin">The people who walked in darkness </div>
+        [8:57.094] |看見|了|一道|皓|光|；|
+            <div class="lyrics_latin">have seen a great light; </div>
+        [9:00.580] |那|寄居|於|漆黑|之|地|的|人|，|
+            <div class="lyrics_latin">upon those who dwelt in the land of gloom </div>
+        [9:04.501] |已有|光輝|照射|在|他們|身上|。|
+            <div class="lyrics_latin">a light has shone. </div>
+        [9:09.608] |你|加強|了|他們|的|快樂|，|
+            <div class="lyrics_latin">You have brought them abundant joy </div>
+        [9:13.115] |增加|了|他們|的|喜悅|；|
+            <div class="lyrics_latin">and great rejoicing, </div>
+        [9:17.619] |他們|在|你|面前|歡樂|，|
+            <div class="lyrics_latin">as they rejoice before you </div>
+        [9:21.205] |有如|人|收割|時|的|歡樂|，|
+            <div class="lyrics_latin">as at the harvest, </div>
+        [9:24.900] |又|如|分贓|時|的|愉快|；|
+            <div class="lyrics_latin">as people make merry when dividing spoils. </div>
+        [9:28.701] |因為|你|折斷|了|他們|所|負|的|重軛|，|
+            <div class="lyrics_latin">For the yoke that burdened them, </div>
+        [9:33.779] |和|他們|肩上|的|橫木|，|
+            <div class="lyrics_latin">the pole on their shoulder, </div>
+        [9:37.166] |以及|壓迫|他們|者|的|短|棍|，|
+            <div class="lyrics_latin">and the rod of their taskmaster you have smashed, </div>
+        [9:41.205] |有如|在|米德楊|那天|一樣|；|
+            <div class="lyrics_latin">as on the day of Midian. </div>
+        [9:45.811] |因為|戰士|所|穿|發|響|的|軍靴|，|
+            <div class="lyrics_latin">For every boot that tramped in battle, </div>
+        [9:50.657] |和|染|滿|血跡|的|戰袍|，|
+            <div class="lyrics_latin">every cloak rolled in blood, </div>
+        [9:54.156] |都要|被|焚毀|，|作為|火燄|的|燃料|。|
+            <div class="lyrics_latin">will be burned as fuel for flames. </div>
+        [10:00.191] |因為|有|一|嬰孩|為|我們|誕生～～|了|，|
+            <div class="lyrics_latin">For a child is born to us, </div>
+        [10:04.861] |有|一個|兒子|賜|給了|我們|。|
+            <div class="lyrics_latin">a son is given us; </div>
+        [10:09.915] |他|肩上|擔負|著|王權|；|
+            <div class="lyrics_latin">upon his shoulder dominion rests. </div>
+        [10:13.899] |他|的|名～～字|要|稱為|
+            <div class="lyrics_latin">They name him </div>
+        [10:16.677] |神奇|的|謀士|、|強有力|的|天主|、|
+            <div class="lyrics_latin">Wonder-Counselor, God-Hero, </div>
+        [10:21.824] |永遠|之父|、|和平～|之|王|。|
+            <div class="lyrics_latin">Father-Forever, Prince of Peace. </div>
+        [10:26.591] |他|的|王權|是|偉大|的|；|
+            <div class="lyrics_latin">His dominion is vast and forever peaceful, </div>
+        [10:30.137] |達味|的|御座|和|他|王國|的|平～安|，|
+            <div class="lyrics_latin">from David’s throne, and over his kingdom, </div>
+        [10:34.767] |是|無限|的|。|
+            <div class="lyrics_latin"></div>
+        [10:37.517] |他|將|以|正義|與|公平～|，|
+            <div class="lyrics_latin">which he confirms and sustains by judgment and justice, </div>
+        [10:41.295] |鞏固|與|保持|他|的|王國|，|
+            <div class="lyrics_latin"></div>
+        [10:45.127] |從|今時|直到|永遠|：|
+            <div class="lyrics_latin">both now and forever. </div>
+        [10:49.179] |萬|軍|上主|的|熱誠|必要|完成|這|事|。|——|上主|的話|。|
+            <div class="lyrics_latin">The zeal of the Lord of hosts will do this! —The Word of the Lord.</div>
+        [10:57.812] |（|默想|片刻|）|
+            <div class="lyrics_latin"></div>
+        [11:01.205] |答唱詠|　|詠|96|:|1|-|2|,| |2|-|3|,| |11|-|12|,| |13|
+            <div class="lyrics_latin">RESPONSORIAL PSALM (96:1-2, 2-3, 11-12, 13)</div>
+        [11:04.627] |【|答|】|：|今天|為|你們|誕生～～|了|一位|救世|者|；|
+            <div class="lyrics_latin">R. Today is born our Savior,</div>
+        [11:10.161] |他|是|主|默西亞|。|（|路|2|:|11|）|
+            <div class="lyrics_latin">Christ the Lord. (Lk 2:11)</div>
+        [11:17.107] |領|：|請～|眾|齊|向上|主|歌唱|新歌|；|
+            <div class="lyrics_latin">Sing to the Lord a new song; </div>
+        [11:21.352] |普世|大地|，|請～|向上|主|謳歌|！|
+            <div class="lyrics_latin">sing to the Lord, all you lands. </div>
+        [11:26.471] |請～|向上|主|歌唱|，|讚美|他|的|聖|名～～|。|【|答|】|
+            <div class="lyrics_latin">Sing to the Lord; bless his name. (R) </div>
+        [11:33.439] |領|：|一|日復一日|，|宣揚|他|的|救|恩|。|
+            <div class="lyrics_latin">Announce his salvation, day after day. </div>
+        [11:37.904] |請～|在|列|邦|中|，|傳述|他|的|光榮|。|
+            <div class="lyrics_latin">Tell his glory among the nations; </div>
+        [11:42.614] |請～|在|萬民|中|，|宣揚|他|的|奇功|。|【|答|】|
+            <div class="lyrics_latin">among all peoples, his wondrous deeds. (R) </div>
+        [11:49.635] |領|：|願|諸天|歡樂|；|願|大地|踴躍|！|
+            <div class="lyrics_latin">Let the heavens be glad and the earth rejoice; </div>
+        [11:54.313] |海洋|及|其中|的|一切|，|要|踴躍|歡騰|。|
+            <div class="lyrics_latin">let the sea and what fills it resound; </div>
+        [11:59.909] |原野|及|其中|的|一切|，|都要|舞蹈|；|
+            <div class="lyrics_latin">; let the plains be joyful and all that is in them! </div>
+        [12:04.720] |森林|中|的|一切|樹木|，|也|各|顯|歡樂|。|【|答|】|
+            <div class="lyrics_latin">Then shall all the trees of the forest exult. (R)</div>
+        [12:12.432] |領|：|請～|在|上主|面前|歡樂|，|
+            <div class="lyrics_latin">They shall exult before the Lord, </div>
+        [12:15.624] |因為|他|已|駕臨|，|統治|大地|乾坤|；|
+            <div class="lyrics_latin">for he comes; for he comes to rule the earth. </div>
+        [12:20.825] |他|要|以|正義|審判|普世|，|
+            <div class="lyrics_latin">He shall rule the world with justice </div>
+        [12:24.876] |以|他|的|忠信|治理|天下|萬民|。|【|答|】|
+            <div class="lyrics_latin">and the peoples with his constancy. (R)</div>
+        [12:31.756] |讀經|二|
+            <div class="lyrics_latin">SECOND READING </div>
+        [12:33.750] |（|天主|拯救|眾人|的|恩寵|已經|出現|。|）|
+            <div class="lyrics_latin">(The grace of God has appeared to all.) </div>
+        [12:40.206] |恭讀|聖保祿|宗|徒|致|弟鐸|書|　|2|:|11|-|14|
+            <div class="lyrics_latin">A reading from the Letter of Saint Paul to Titus (2:11-14)</div>
+        [12:46.587] |親愛|的|：|
+            <div class="lyrics_latin">Beloved: </div>
+        [12:48.895] |天主|拯救|眾人|的|恩寵|已經|出現|，|
+            <div class="lyrics_latin">The grace of God has appeared, </div>
+        [12:54.552] |教導|我們|棄|絕不|虔敬|的|生～～活|，|
+            <div class="lyrics_latin">saving all and training us to reject godless ways </div>
+        [12:58.711] |和|世俗|的|貪慾|；|
+            <div class="lyrics_latin">and worldly desires </div>
+        [13:01.499] |而|要有|節制|地|、|公正|地|、|
+            <div class="lyrics_latin">and to live temperately, justly, </div>
+        [13:05.349] |虔敬|地|在|今世|生～～活|，|
+            <div class="lyrics_latin">and devoutly in this age, </div>
+        [13:08.565] |期待|所|希望|的|幸福|，|
+            <div class="lyrics_latin">as we await the blessed hope, </div>
+        [13:11.946] |和|我們|偉大|的|天主|
+            <div class="lyrics_latin">the appearance of the glory of our great God </div>
+        [13:15.223] |及|救主|耶穌基督|光榮|的|顯現|。|
+            <div class="lyrics_latin">and savior Jesus Christ, </div>
+        [13:20.509] |他|為|我們|捨棄|了|自己|，|
+            <div class="lyrics_latin">who gave himself for us </div>
+        [13:23.978] |是|為|救贖|我們|脫離|一切|罪惡|，|
+            <div class="lyrics_latin">to deliver us from all lawlessness </div>
+        [13:28.166] |並|洗淨|我們|，|
+            <div class="lyrics_latin">and to cleanse for himself </div>
+        [13:30.213] |使|我們|能|成為|他|的|選民|，|
+            <div class="lyrics_latin">a people as his own, </div>
+        [13:33.912] |叫|我們|熱心|行～～～～善|。|
+            <div class="lyrics_latin">eager to do what is good. </div>
+        [13:37.523] |—|—|上主|的話|。|
+            <div class="lyrics_latin">—The Word of the Lord. </div>
+        [13:39.500] |（|默想|片刻|）|
+            <div class="lyrics_latin"></div>
+        [13:41.255] |福音|前|歡呼|
+            <div class="lyrics_latin">GOSPEL ACCLAMATION </div>
+        [13:44.930] |領|：|亞肋～～～～路亞|。|
+            <div class="lyrics_latin">Alleluia </div>
+        [13:47.941] |眾|：||亞肋～～～～路亞|。|
+            <div class="lyrics_latin">Alleluia </div>
+        [13:51.503] |領|：|我|給|你們|報告|一個|大|喜訊|：|
+            <div class="lyrics_latin">I proclaim to you good news of great joy: </div>
+        [13:55.634] |今天|為|你們|誕生～～|了|一位|救世|者|。|（|路|2|:|10|-|11|）|
+            <div class="lyrics_latin">today a Savior is born for us, Christ the Lord. (R) (Lk 2:10-11)</div>
+        [14:02.119] |眾|：|||亞肋～～～～路亞|。|
+            <div class="lyrics_latin">Alleluia </div>
+        [14:06.229] |福音|
+            <div class="lyrics_latin">GOSPEL </div>
+        [14:09.044] |（|救世主|今天|為|你們|誕生～～|了|。|）|
+            <div class="lyrics_latin">(Today a Savior has been born for you.) </div>
+        [14:15.021] |恭讀|聖|路加福音|　|2|:|1|-|14|
+            <div class="lyrics_latin">A reading from the holy Gospel according to Luke (2:1-14)</div>
+        [14:19.942] |那時|凱撒奧古斯都|，|出了|一道|上諭|，|
+            <div class="lyrics_latin">In those days a decree went out from Caesar Augustus </div>
+        [14:26.089] |叫|天下|的|人|都要|登記|：|
+            <div class="lyrics_latin">that the whole world should be enrolled. </div>
+        [14:29.857] |這是|季黎諾|作|敘利亞|總督|時|，|
+            <div class="lyrics_latin">(2) when Quirinius was governor of Syria. </div>
+        [14:34.387] |初次|行～～～～|的|登記|。|
+            <div class="lyrics_latin">(1) This was the first enrollment, </div>
+        [14:37.829] |於是|，|眾人|各|去|本城|登記|。|
+            <div class="lyrics_latin">So all went to be enrolled, each to his own town. </div>
+        [14:43.511] |若瑟|因為|是|達味|家族|的|人|，|
+            <div class="lyrics_latin">And Joseph too (3) because he was of the house and family of David, </div>
+        [14:46.761] |也|從|加里肋亞|納匝肋|城|，|
+            <div class="lyrics_latin">(1) went up from Galilee from the town of Nazareth </div>
+        [14:50.686] |上|猶大|名～～叫|白冷|的|達味|城|去|，|
+            <div class="lyrics_latin">(2) to Judea, to the city of David that is called Bethlehem, </div>
+        [14:55.299] |好|同|自己|已|懷孕|的|聘妻|瑪利亞|去|登記|。|
+            <div class="lyrics_latin">to be enrolled with Mary, his betrothed, who was with child. </div>
+        [15:01.549] |他們|在|那裡|的|時候|，|
+            <div class="lyrics_latin">While they were there, </div>
+        [15:04.530] |瑪利亞|分娩|的|日期|滿|了|，|
+            <div class="lyrics_latin">the time came for her to have her child, </div>
+        [15:08.266] |便|生～～|了|她|的|頭胎|男兒|，|
+            <div class="lyrics_latin">and she gave birth to her firstborn son. </div>
+        [15:12.024] |用|襁褓|裹|起|，|放在|馬槽|裡|，|
+            <div class="lyrics_latin">She wrapped him in swaddling clothes and laid him in a manger, </div>
+        [15:17.296] |因為|在|客棧|中|，|為|他們|沒有|地方|。|
+            <div class="lyrics_latin">because there was no room for them in the inn.</div>
+        [15:23.717] |在|那|地區|，|
+            <div class="lyrics_latin">Now there were </div>
+        [15:25.473] |有些|牧羊人|露宿|守夜|，|看守|羊群|。|
+            <div class="lyrics_latin">shepherds in that region living in the fields and keeping the night watch over their flock. </div>
+        [15:31.472] |有|上主|的|一位|天使|，|站在|他們|身邊|；|
+            <div class="lyrics_latin">The angel of the Lord appeared to them </div>
+        [15:37.341] |上主|的|榮光|，|照射|著|他們|；|
+            <div class="lyrics_latin">and the glory of the Lord shone around them, </div>
+        [15:41.819] |他們|便|非常|害怕|。|
+            <div class="lyrics_latin">and they were struck with great fear. </div>
+        [15:46.165] |天使|向|他們|說|：|
+            <div class="lyrics_latin">The angel said to them, </div>
+        [15:48.842] |「|不要害怕|！|看|！|
+            <div class="lyrics_latin">“Do not be afraid; for behold, </div>
+        [15:52.738] |我|給|你們|報告|一個|為～～|全民|族|的|大|喜訊|：|
+            <div class="lyrics_latin">I proclaim to you good news of great joy that will be for all the people. </div>
+        [15:58.316] |今天|在|達味|城中|，|
+            <div class="lyrics_latin">For today in the city of David </div>
+        [16:00.977] |為|你們|誕生～～|了|一位|救世|者|；|
+            <div class="lyrics_latin">a savior has been born for you </div>
+        [16:05.130] |他|是|主|默西亞|。|
+            <div class="lyrics_latin">who is Christ and Lord. </div>
+        [16:08.819] |這是|給|你們|的|記號|：|
+            <div class="lyrics_latin">And this will be a sign for you: </div>
+        [16:11.430] |你們|將要|看見|一個|嬰兒|，|
+            <div class="lyrics_latin">you will find an infant </div>
+        [16:14.901] |裹|著|襁褓|，|躺在|馬槽|裡|。|」|
+            <div class="lyrics_latin">wrapped in swaddling clothes and lying in a manger.” </div>
+        [16:20.039] |忽然|有|一|大隊|天|軍|，|
+            <div class="lyrics_latin">And suddenly there was a multitude of the heavenly host </div>
+        [16:22.797] |同|那|天使|一|起|，|讚頌|天主|說|：|
+            <div class="lyrics_latin">with the angel, praising God and saying: </div>
+        [16:28.373] |「|天主|在|天|受|光榮|，|主愛|的|人|在世|享|平～安|！|」|
+            <div class="lyrics_latin">“Glory to God in the highest and on earth peace to those on whom his favor rests.” </div>
+        [16:36.762] |——|上主|的話|。|
+            <div class="lyrics_latin">—The Gospel of the Lord.</div>
+        [] |（|講道|後|默想|片刻|）|
+            <div class="lyrics_latin"></div>       
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
