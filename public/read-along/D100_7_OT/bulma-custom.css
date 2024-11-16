@@ -1,0 +1,19 @@
+:root {
+  --bulma-primary-h: 190deg;
+  --bulma-primary-l: 44%;
+  --bulma-link-h: 336deg;
+  --bulma-link-s: 80%;
+  --bulma-link-l: 58%;
+  --bulma-info-s: 33%;
+  --bulma-info-l: 69%;
+  --bulma-success-h: 131deg;
+  --bulma-success-s: 51%;
+  --bulma-success-l: 61%;
+  --bulma-danger-h: 10deg;
+  --bulma-danger-s: 94%;
+  --bulma-danger-l: 57%;
+  --bulma-family-primary: Fira Sans,Inter,SF Pro,Segoe UI,Roboto,Oxygen,Ubuntu,Helvetica Neue,Helvetica,Arial,sans-serif;
+  --bulma-family-secondary: Fira Sans,Inter,SF Pro,Segoe UI,Roboto,Oxygen,Ubuntu,Helvetica Neue,Helvetica,Arial,sans-serif;
+  --bulma-family-code: Fira Mono,Inconsolata,Hack,SF Mono,Roboto Mono,Source Code Pro,Ubuntu Mono,monospace;
+}
+
